@@ -1,0 +1,80 @@
+.banner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+.scene {
+  padding: 0;
+  margin: 0;
+  
+}   
+.scene img{
+  max-width: initial !important;
+}    
+.
+.expand-width {
+  width: 100%;
+}
+
+.aspect {
+  opacity: 0.2;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.88;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+.l1 img{
+  margin-top: -15px;
+  margin-left: -20px;
+  width: 115%;
+}
+
+.l2{
+  width: 100%
+}
+
+.l2 h1{
+  padding-top: 18%;
+  color: #fff;
+  text-align: center !important;
+}
+.l3{
+  width: 100%
+}
+
+.l3 h5{
+  padding-top: 16%;
+  color: rgba(255,255,255,.7);
+  text-align: center !important;
+}
+.l4{
+  width: 100%;
+  text-align: center;
+  padding-top: 26%;
+}
+.l4 a{
+  font-family: "Ubuntu-M";
+  text-transform: uppercase;
+  font-size: 11px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: 2px solid rgba(255,255,255,.8);
+  color: rgba(255,255,255,.8);
+  text-align: center !important;
+   webkit-transition: border 0.4s,color 0.4s;
+  -moz-transition: border 0.4s,color 0.4s;
+  transition: border 0.4s,color 0.4s;
+}
+.l4 a:hover{
+  border: 2px solid rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+}
+
+
+
