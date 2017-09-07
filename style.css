@@ -447,6 +447,9 @@ button {
   .carna-menu-wrap {
     display: none;
   }
+  .mm-button-band {
+    display: none;
+  }
 }
 /* Menu items */
 .carna-menu > li {
@@ -500,16 +503,14 @@ button {
     color: #20D6B2;
   }
   .header-fill .carna-menu > li > a {
-    color: #D2D2D2;
+    color: #f0f0f0;
   }
   .is-fill .carna-menu > li > a {
     color: #1F1F1F;
   }
-  .header-fill .carna-menu > li > a:hover {
-    color: #73ba6a;
-  }
+  .header-fill .carna-menu > li > a:hover,
   .header-fill .carna-menu > li > a.active {
-    color: #9ac445;
+    color: #5BE2CD;
   }
 }
 /* BUTTON WRAP */
@@ -719,6 +720,7 @@ button {
   }
 }
 @media (max-width: 991px) {
+
   .mm-menu-open .mm-button-band {
     -webkit-transform: translateX(300px);
     -moz-transform: translateX(300px);

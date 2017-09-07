@@ -11,6 +11,10 @@
   font-family: "Ubuntu-M";
   src: url("../fonts/fonts/Ubuntu-M.ttf");
 }
+@font-face {
+  font-family: "Jaapokki-Regular";
+  src: url("../fonts/fonts/Jaapokki-Regular.otf");
+}
 @media (min-width: 993px){
   .nav-wrap.header-fill .brand .logo-dark, .nav-wrap.header-fill .brand-widescreen .logo-dark {
     padding: 8px;
@@ -63,10 +67,10 @@ span.wpcf7-not-valid-tip {
   color: #16AD8F;
 }
 
-.masonry { margin: 0px; padding: 0; -moz-column-gap: 0px; -webkit-column-gap: 0px; column-gap: 0px; font-size: .85em; } 
+.masonry { margin: 40px 0px; padding: 0; -moz-column-gap: 0px; -webkit-column-gap: 0px; column-gap: 0px; font-size: .85em; } 
 .masonry .item { 
   margin: 0; 
-  padding: 0;
+  padding: 5px;
   width: 100%; 
   display: block;
   position: relative;
@@ -83,46 +87,59 @@ span.wpcf7-not-valid-tip {
 } 
 .masonry .item .info-detalles{ 
   position: absolute;
-  top:0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top:15px; 
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   opacity: 0;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  -moz-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
-  background: rgba(15, 16, 16, 0.7);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 } 
+.web .info-detalles{ 
+  background: #B3AF92;
+}
+.drawing .info-detalles{ 
+  background: #ff7e15;
+}
 .masonry .item .info .detalles{ 
   position: absolute;
-  text-align: center;
-  left: 0px;
-  right: 0px;
-  bottom: 48%;
-  -webkit-transform:  scale(1.2);
-  -moz-transform:  scale(1.2);
-  -ms-transform:  scale(1.2);
-  -o-transform:  scale(1.2);
-  transform: scale(1.2);
+  left: 15px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  -webkit-transform:  scale(1.05);
+  -moz-transform:  scale(1.05);
+  -ms-transform:  scale(1.05);
+  -o-transform:  scale(1.05);
+  transform: scale(1.05);
   webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
   -moz-transition: -moz-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
 } 
-.masonry .item .info .detalles p{ 
+.masonry .item .detalles span{ 
   color: #fff;
-  margin: 0;
-  font-family: "Santral Light";
+  font-size: 9px;
+  font-family: "Jaapokki-Regular";
   text-transform: uppercase;
-  font-size: 12px
 }
-.masonry .item .info .detalles h4{ 
+.masonry .item .detalles h4{ 
   color: #fff;
   margin: 0;
-  font-family: "Santral Light";
+  margin-top: 20px;
+  font-family: "Jaapokki-Regular";
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 16px
+  font-size: 28px
 }
+.masonry .item .detalles p{ 
+  color: #fff;
+  margin: 0;
+  font-family: "Santral Light";
+  text-transform: capitalize;
+  font-size: 12px
+}
+
 .masonry .item:hover .info-detalles {
   opacity: 1;
 }
@@ -155,7 +172,7 @@ span.wpcf7-not-valid-tip {
   }
 }
 #about{
-  background: rgba(239,239,239,.47);
+  background: rgba(255,255,255,.47);
 }
 .RSS, .main-footer{
   background-image: url('../img/blackorchid.png');  
