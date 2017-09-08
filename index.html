@@ -18,16 +18,14 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/ionicons.css">
     <link rel="stylesheet" href="css/pe-icon-7.css">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link href="css/animsition.css" rel="stylesheet">
 
 
     <link href="css/settings.css" rel="stylesheet">
     <link href="css/layers.css" rel="stylesheet">
     <link href="css/navigation.css" rel="stylesheet">
-    <!-- rev slider 
-    <link href="<?php //bloginfo('template_url')?>/bootstrap-4.0/css/bootstrap.min.css" rel="stylesheet" >-->
+   
     <link href="ekko-lightbox/ekko-lightbox.css" rel="stylesheet">
     <link href="css/stylesParallax.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -143,15 +141,10 @@
             <div id="banner" class="banner">
                 <ul id="scene" class="scene">
                     <li class="layer l1" data-depth="0.15"><img src="img/fondo1.jpg"></li>
-                    <li style="position: absolute; top:0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.4);"></li>
+                    <li style="position: absolute; top:0;left: 0;right: 0;bottom: 0;background: rgba(10,30,30,.75);"></li>
                     <li class="layer l2" data-depth="0.0"><h1>Adrian Bello</h1></li>
                     <li class="layer l3" data-depth="0.0"><h5>Desarrollador Web</h5></li>
                     <li class="layer l4" data-depth="0.0"><a href="#work" data-scroll="" class="scrollTo"><span>Ver portafolio</span></a></li>
-                    <!-- <li class="layer l2" data-depth="0.10"><img src="<?php// bloginfo('template_url')?>/img/planet.png"></li>
-                    <li class="layer l3" data-depth="0.12"><img src="<?php// bloginfo('template_url')?>/img/nino.png"></li>
-                    <li class="layer l4" data-depth="0.80"><img src="<?php// bloginfo('template_url')?>/img/img3.png"></li>
-                    <li class="layer l5" data-depth="0.60"><img src="<?php// bloginfo('template_url')?>/img/img4.png"></li>
-                    <li class="layer l6" data-depth="0.40"><img src="<?php// bloginfo('template_url')?>/img/img1.png"></li> -->
                 </ul>
             </div>
           </div>
@@ -215,12 +208,10 @@
                             <div class="col-md-4">
                                 <h1 class="section-header"> Portfolio</h1>
                             </div>
-                            <div class="col-md-8" style="text-align: right;">
-                                <div class="btn-group" role="group" >
+                            <div class="col-md-8 botones" style="text-align: right;">
                                     <button type="button" class="btn btn-portfolio filter-button" data-filter="all">All</button>
                                     <button type="button" class="btn btn-portfolio filter-button" data-filter="drawing">Drawing</button>
-                                    <button type="button" class="btn btn-portfolio filter-button" data-filter="web">Web Development</button>
-                                </div>
+                                    <button type="button" class="btn btn-portfolio filter-button" data-filter="web">Web Development</button>                            
                             </div>
 
                             <!-- / col-md-12 -->
@@ -229,11 +220,10 @@
                     </div>
                     <div class="space-y-b">
                         <div id="works" class="masonry fadeAnim" data-animate-type="quicksand">
-
                             <div class="item filter web">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/ClasGo.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #1c3260;">
                                         <div class="detalles">
                                             <span>Web Development</span>
                                             <h4>ClasGo</h4>
@@ -243,9 +233,9 @@
                                 </a>
                             </div>
                             <div class="item filter web">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/Sybven.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #06847A;">
                                         <div class="detalles">
                                             <span>Web Development</span>
                                             <h4>Sybven</h4>
@@ -255,9 +245,9 @@
                                 </a>
                             </div>
                             <div class="item filter web">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/Synergizefit.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #A5131D;">
                                         <div class="detalles">
                                             <span>Web Development</span>
                                             <h4>Synergizefit</h4>
@@ -268,20 +258,20 @@
                             </div>
                             
                             <div class="item filter drawing">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/draw1.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #FFC40F;">
                                         <div class="detalles">
                                             <span>Drawing</span>
-                                            <h4>Drawing</h4>
+                                            <h4>Fire Look</h4>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="item filter web">
-                                <a href="" class="info">
+                                <a  class="info">
                                     <img src="img/activatuevento.png" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #FD9C02;">
                                         <div class="detalles">
                                             <span>Web Development</span>
                                             <h4>Activatuevento</h4>
@@ -291,45 +281,34 @@
                                 </a>
                             </div>
                             <div class="item filter drawing">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/draw2.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #0FC0C6;">
                                         <div class="detalles">
                                             <span>Drawing</span>
-                                            <h4>Drawing</h4>
+                                            <h4>Koy</h4>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="item filter drawing">
-                                <a href="" class="info">
-                                    <img src="img/draw4.jpg" alt="">
-                                    <div class="info-detalles">
-                                        <div class="detalles">
-                                            <span>Drawing</span>
-                                            <h4>Drawing</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item filter drawing">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/draw3.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #7A7A7A;">
                                         <div class="detalles">
                                             <span>Drawing</span>
-                                            <h4>Drawing</h4>
+                                            <h4>Eyes</h4>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="item filter drawing">
-                                <a href="" class="info">
+                                <a class="info">
                                     <img src="img/draw6.jpg" alt="">
-                                    <div class="info-detalles">
+                                    <div class="info-detalles" style="background: #2274BA;">
                                         <div class="detalles">
                                             <span>Drawing</span>
-                                            <h4>Drawing</h4>
+                                            <h4>Stich</h4>
                                         </div>
                                     </div>
                                 </a>
@@ -340,27 +319,6 @@
                 </section>
                 <!-- / SECTION -->
             </div>
-            <!--end container-fluid-flat -->
-             <!--<div id="logos" class="highlight-section text-center ">
-                <div class="container-fluid-flat">
-                    <div class="row  space-y-t-h">
-                    
-                        <ul class="layout-brand border-b clearfix">
-                            <li class="col-xs-6 col-sm-3 animated" data-animation="fadeIn"><img src="<?php //bloginfo('template_url')?>/img/1.png" alt="" data-no-retina="">
-                            </li>
-                            <li class="col-xs-6 col-sm-3 animated" data-animation="fadeIn" data-animation-delay="200"><img src="<?php //bloginfo('template_url')?>/img/2.png" alt="" data-no-retina="">
-                            </li>
-                            <li class="col-xs-6 col-sm-3 animated" data-animation="fadeIn" data-animation-delay="400"><img src="<?php //bloginfo('template_url')?>/img/3.png" alt="" data-no-retina="">
-                            </li>
-                            <li class="col-xs-6 col-sm-3 animated" data-animation="fadeIn" data-animation-delay="600"><img src="<?php //bloginfo('template_url')?>/img/4.png" alt="" data-no-retina="">
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div> -->
-            <!-- / highlight-section -->
-            <!-- end work -->
             <div id="services" class="pages">
                 <div class="container space-y-t">
                     <div class="row">
@@ -374,59 +332,56 @@
                 <!-- / container -->
                 <div class="container-fluid space-y-b-h">
                     <div class="row">
-                        <div class="col-md-6 content-box-side animated" data-animation="fadeIn">
+                        <div class="col-md-4 content-box-side animated" data-animation="fadeIn">
                             <div class="box-side-details">
                                 <div class="box-side__header"> <i class="fa fa-code"></i>
-                                    <h3 class="standard-title">Desarrollo</h3> </div>
+                                    <h3 class="standard-title">Desarrollo Web</h3> </div>
                                 <p style="text-align: justify;">Utilizando las últimas herramientas de desarrollo disponibles, creo diseños únicos, originales y adaptables a las necesidades individuales de cada cliente.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 content-box-side animated" data-animation="fadeIn" data-animation-delay="200">
+                        <div class="col-md-4 content-box-side animated" data-animation="fadeIn" data-animation-delay="200">
                             <div class="box-side-details">
                                 <div class="box-side__header"> <i class="fa fa-tablet"></i>
-                                    <h3 class="standard-title">Diseño Responsive</h3> </div>
-                                <p style="text-align: justify;">Diseño web responsive o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos. Desde ordenadores de escritorio a tablets y móviles.</p>
+                                    <h3 class="standard-title">Desarrollo de APP</h3> </div>
+                                <p style="text-align: justify;">Tendrás una aplicación móvil para su negocio, ofreciéndole una forma de interactuar con sus clientes directamente en sus dispositivos móviles favoritos.</p>
                             </div>
                         </div>
+                        <div class="col-md-4 content-box-side animated" data-animation="fadeIn" data-animation-delay="200">
+                            <div class="box-side-details">
+                                <div class="box-side__header"> <i class="fa fa-wordpress"></i>
+                                    <h3 class="standard-title">Página Web Wordpress</h3> </div>
+                                <p style="text-align: justify;">Tendrás una página web para tu negocio simple e intuitiva, ademas de un administrador de contenido donde podrás hacer cambios de manera fácil y sin depender de terceros.</p>
+                            </div>
+                        </div>
+
+                        
                     </div>
                     <!-- end row -->
                 </div>
                 <!-- end container -->
             </div>
             <div id="contact" class="pages">
-                <div class="container space-y-t">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="section-header">Contacto</h1>
+                <div class="efecto">
+                    <div class="container space-y-t">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="section-header">Contacto</h1>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="" method="post" class="" novalidate="">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Descripción">
+                                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                                    <input value="Submit" class="" type="submit">
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <span>Tambien puedes enviarme tus comentarios e inquietudes a través de:</span>
+                                <p><i class="fa fa fa-phone"></i>  +58 412 543 7083</p>
+                                <p><i class="fa fa fa-envelope-o"></i>  adrianberuiz@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container" style="padding-top: 20px;">
-                    <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('contact')) : endif; ?>
-                </div>
-            </div>
-    <!-- / animsation -->
-            <div class="container-fluid-flat text-center counter-content RSS">
-                <div class="row">
-                    <div class="counter col-md-3 col-sm-6">
-                        <a href="#">
-                            <i class="fa fa-facebook fa-3x animated" data-animation="fadeInUp" data-animation-delay="50"></i>
-                        </a>
-                    </div>
-                    <div class="counter col-md-3 col-sm-6">
-                        <a href="#">
-                            <i class="fa fa-twitter fa-3x animated" data-animation="fadeInUp" data-animation-delay="50"></i>
-                        </a>
-                    </div>
-                    <div class="counter col-md-3 col-sm-6">
-                        <a href="#">
-                            <i class="fa fa-instagram fa-3x animated" data-animation="fadeInUp" data-animation-delay="50"></i>
-                        </a>
-                    </div>
-                    <div class="counter col-md-3 col-sm-6">
-                        <a href="#">
-                            <i class="fa fa-flag fa-3x animated" data-animation="fadeInUp" data-animation-delay="50"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -440,21 +395,18 @@
             <h1 class="mm-menu__title text-uppercase">info</h1>
             <div class="mm-menu__address">
                 <h6 class="text-uppercase">Acerca</h6>
-                <p style="font-size: 12px;text-align: justify;">Comencé mi carrera profesional como Desarrollador Web en una pequeña empresa de diseño web hace 2 años. La experiencia en este trabajo me ayudó a aprender a relacionarme con los clientes y obtener el conocimiento necesario para entender y comprender las necesidades del cliente y así lograr el efecto final "Wow". Asimismo comprendí que la unión de desarrolladores con diseñadores logran hacer magia.
-                <br><br>
-                Un año más tarde era el momento de seguir adelante e instruirme en otros lenguajes, es así que me uno a unos compañeros de estudio en una empresa un poco más grande llamada Soluciones Laser.
-                <br><br>
-                Después de casi un año trabajando allí logré obtener una gran cantidad de conocimientos debido a variedad de proyectos que manejé, desde servicios, pasando por páginas web hasta aplicaciones móviles.<br><br>
-                En otro orden de ideas y no menos importante puedo decir que una guitarra desafinada, un piano sin dejar de sonar, unos trazos que se convierten en dibujos, y una familia y amigos que valen oro, ocupan mi tiempo libre. <br><br>
-                El secreto para salir adelante es simplemente empezar.
-                </p></p>
+                <p style="font-size: 12px;text-align: justify;">
+                    Hola, me llamo Adrian Bello, soy un programador que trabaja con pequeñas empresas que necesitan conseguir clientes en internet gracias a una web profesional que transmita confianza.
+                    <br><br>
+                    Crearé tu web para que posicione bien en Google gracias a un desarrollo muy optimizado y un diseño simple e intuitivo.
+                </p>
             </div>
             <!-- / mm-menu__address-->
             <div class="mm-menu__address">
                 <h6 class="text-uppercase">Información de Contacto</h6>
                 <ul class="mm-menu__list">
                     <li class="" style="transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;">+58 412 543 7083</li>
-                    <li class="" style="transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;">adrianberuiz@gmail.com</li>
+                    <li class="" style="transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;"><a href="mailto:adrianberuiz@gmail.com">adrianberuiz@gmail.com</a></li>
                 </ul>
             </div>
             <!-- / mm-menu__address-->
@@ -478,7 +430,7 @@
     </div>
     <script src="js/jquery.1.12.4.js"></script>
     <script src="tether/tether.min.js"></script>
-    <script src="bootstrap-4.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="anchor/anchor.min.js"></script>
         
     <script src="js/jquery-ui.min.js"></script>
@@ -502,25 +454,26 @@
     <script src="js/custom.js"></script>
     <script src="js/parallax.min.js"></script>
     <script>
+   
     $(document).ready(function(){
+             $(".item a").click(function(){
+                var img = $(this).find("img").attr("src");
+                $( "#gallery .modal-body img").attr("src",img);
+                $('#gallery').modal();
+            });
             $(".filter-button").click(function(){
+                $(".filter-button").removeClass("active");
+                $(this).addClass("active");
                 var value = $(this).attr('data-filter');
                 
                 if(value == "all")                {
                     //$('.filter').removeClass('hidden');
                     $('.filter').show('1000');
                 }else{
-        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-                    $(".filter").not('.'+value).hide('3000');
-                    $('.filter').filter('.'+value).show('3000');
-                    
+                    $(".filter").not('.'+value).hide('2500');
+                    $('.filter').filter('.'+value).show('2500');  
                 }
             });
-            if ($(".filter-button").removeClass("active")) {
-                $(this).removeClass("active");
-            }
-        $(this).addClass("active");
     });
 
 
@@ -529,4 +482,20 @@
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);             
     </script>
-<div class="mm-menu-mask"></div></body></html>
+
+    <div class="mm-menu-mask"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="gallery" tabindex="-1" role="dialog" >
+      <div class="modal-dialog modal-lg" role="document">
+        <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="content">
+                <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

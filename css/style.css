@@ -1,4 +1,31 @@
+/* Let's get this party started */
+body::-webkit-scrollbar {
+    width: 4px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+    
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #C9C9C9;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 
+body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #AFAFAF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+body::-webkit-scrollbar-thumb:window-inactive {
+  background: #AFAFAF; 
+}
 @font-face {
   font-family: "Santral Light";
   src: url("../fonts/fonts/Santral-Light.otf");
@@ -33,7 +60,6 @@
     padding: 8px;
   }
 }
-
 .mm-menu-open .nav-wrap .container-fluid {
   padding-right: 0px;
 }
@@ -87,21 +113,15 @@ span.wpcf7-not-valid-tip {
 } 
 .masonry .item .info-detalles{ 
   position: absolute;
-  top:15px; 
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  top:10px; 
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 } 
-.web .info-detalles{ 
-  background: #B3AF92;
-}
-.drawing .info-detalles{ 
-  background: #ff7e15;
-}
 .masonry .item .info .detalles{ 
   position: absolute;
   left: 15px;
@@ -171,20 +191,17 @@ span.wpcf7-not-valid-tip {
     padding-top: 5px;
   }
 }
+.mm-menu a{
+  color: #00C191;
+}
+.dark-bg,.deco-parting,#logos,.mm-menu, .main-footer,#services{ 
+  background-image: url('../img/noisy_net.png');  
+}
 #about{
   background: rgba(255,255,255,.47);
 }
-.RSS, .main-footer{
-  background-image: url('../img/blackorchid.png');  
-}
-.dark-bg,.deco-parting,#logos,.mm-menu{ 
-  background-image: url('../img/noisy_net.png');  
-}
 #work{ 
   background-image: url('../img/cream_pixels.png');  
-}
-#services{ 
-  background-image: url('../img/noisy_net.png');  
 }
 .counter-content {
   border-top: 0px solid #25282b;
@@ -193,9 +210,16 @@ span.wpcf7-not-valid-tip {
   font-family: "Santral Light";
   text-transform: capitalize;
 }
+
+
 #work h1{
   color: #343434;
 }
+#works a{
+  cursor: pointer;
+}
+
+
 #services h1{
   color: #DEDEDE;
 }
@@ -209,44 +233,112 @@ span.wpcf7-not-valid-tip {
 
 
 
+#gallery .content{
+  max-height: 550px;
+  overflow-y: auto;
+}
+#gallery img{
+  width: 100%;
+}
+#gallery .close{
+  position: absolute;
+  top: -10px ;
+  right: -10px;
+  background: black;
+  color: #fff;
+  padding: 0px 4px;
+  padding-bottom: 1px;
+  text-shadow: 0 0px 0 #fff; 
+  z-index: 999;
+  opacity: 1;
+  border:1px solid #fff;
+  border-radius: 50%;
+}
+#gallery .content::-webkit-scrollbar {
+    width: 4px;
+}
+/* Track */
+#gallery .content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+    
+/* Handle */
+#gallery .content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #C9C9C9;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#gallery .content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #AFAFAF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#gallery .content::-webkit-scrollbar-thumb:window-inactive {
+  background: #AFAFAF; 
+}
+
+
+
+
 #contact{ 
   background-image: url('../img/fondo3.jpeg');  
   background-size: cover;
-  min-height: 90vh;
+  min-height: 20vh;
+}
+#contact .efecto{ 
+  width: 100%;
+  height: 100%;
+  background: rgba(10,30,30,.8);  
 }
 #contact h1{
   color: #E2E2E2;
+  margin-bottom: 40px;
 }  
-#contact{
-  padding-bottom: 80px;
-}
-#contact label{
-  color: #e2e2e2;
-  font-size: 14px;
-  font-family: "Ubuntu-M";
-}
-#contact label span{
+#contact i{
   color: #00C191;
-  font-size: 170%;
-  line-height: 14px;
-}
+} 
+#contact span{
+  color: #E9E9E9;
+  display: block;
+  margin-bottom: 20px;
+}  
 #contact input[type=text],
 #contact input[type=email],
 #contact textarea{
   background: transparent !important; 
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255,255,255,.1);
+  border-radius: 0;
+  box-shadow: none;
   padding: 10px;
-  border-bottom: 3px solid #acb1b0;
   margin-bottom: 20px;
   width: 100%;
 }
+#contact input[type=text]:focus,
+#contact input[type=email]:focus,
+#contact textarea:focus{
+  border-width: 1px;
+  color: #F2F2F2;
+  border-color: #00C191;
+  box-shadow: 0px 0px 2px #00C191;
+}
 #contact textarea{
   width: 100%; 
-  height: 146px;
+  height: 120px;
 }
 
 #contact input[type=submit]{
   padding: 5px 25px;
-  background: #494D4C;
+  width: 100%;
+  border-width: 1px;
+  border-color: rgba(255,255,255,.1);
+  background: #009D76;
   color: #fff;
   margin-bottom: 50px;
    font-family: "Ubuntu-M";
@@ -256,25 +348,6 @@ span.wpcf7-not-valid-tip {
 }
 #contact input[type=submit]:hover{
   background: #00C191;
-}
-.RSS{
-  border-bottom: 1px solid #181818;
-}
-.RSS .counter{
-  min-height: auto;
-}
-.RSS .counter a{
-  display: inline-block;
-  width: 100%;
-}
-.RSS .counter a>i{
-  color: #A8A8A8 !important;
-   webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.RSS .counter a:hover >i{
-  color: white !important;
 }
 
 
@@ -299,15 +372,27 @@ span.wpcf7-not-valid-tip {
   font-family: "Santral Light";
   color: #4a4a4a;
 }
-.btn-portfolio {
+.botones .btn-portfolio {
     color: #EEEEEE;
+    outline: none;
     background-color: rgba(70, 70, 70, .9);
     border: none;
+    border-radius: 40px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 10px;
 }
-.btn-portfolio:hover,
-.btn-portfolio:focus{
+.botones .btn-portfolio:hover{
     color: #EEEEEE;
-    background-color: rgba(50, 50, 50, .7);
+    background-color: rgba(40, 40, 40, .9);
+}
+.botones .btn-portfolio:focus{
+    border:0;outline:0 none;
+}
+.botones .active,
+.botones .btn-portfolio:focus{
+    color: #EEEEEE;
+    background-color:  #11AC8D;
 }
 .main-footer h4,
 .main-footer h6{

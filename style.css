@@ -146,11 +146,6 @@ li {
   margin: 0;
   padding: 0;
 }
-input,
-textarea {
-  outline: none;
-  border: 0;
-}
 button {
   border: 0;
 }
@@ -359,7 +354,7 @@ button {
 }
 @media (min-width: 993px) {
   .nav-wrap.is-fill {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .95);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   }
   .nav-wrap.is-fill .brand {
@@ -510,7 +505,7 @@ button {
   }
   .header-fill .carna-menu > li > a:hover,
   .header-fill .carna-menu > li > a.active {
-    color: #5BE2CD;
+    color: #00C191;
   }
 }
 /* BUTTON WRAP */
@@ -669,11 +664,11 @@ button {
   transition: transform 0.5s cubic-bezier(0.1, 0.03, 0.1, 0.955);
 }
 .content-wrapper.mm-menu-open {
-  -webkit-transform: translateX(-300px);
-  -moz-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  -o-transform: translateX(-300px);
-  transform: translateX(-300px);
+/*  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+  transform: translateX(-200px);*/
 }
 .mm-button-band,
 .brand-band {
@@ -949,8 +944,8 @@ button {
 }
 /* list */
 .mm-menu__address {
-  padding: 1em 0;
-  margin: 1em 0;
+  padding: .4em 0;
+  margin: .4em 0;
   color: #fff;
 }
 .mm-menu__address h6 {
