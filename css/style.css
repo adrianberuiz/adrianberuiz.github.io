@@ -42,8 +42,31 @@ body::-webkit-scrollbar-thumb:window-inactive {
   font-family: "Jaapokki-Regular";
   src: url("../fonts/fonts/Jaapokki-Regular.otf");
 }
+.modal-backdrop.in {
+    filter: alpha(opacity=90);
+    opacity: .92;
+}
+.modal-backdrop {
+    background-color: #141C1A;
+}
+.modal-body {
+    padding: 0px;
+}
 @media (min-width: 993px){
-  .nav-wrap.header-fill .brand .logo-dark, .nav-wrap.header-fill .brand-widescreen .logo-dark {
+  #btn-music {
+      cursor: pointer;
+      position: fixed;
+      z-index: 99999;
+      bottom: 1.5em;
+      left: 2em;
+      text-decoration: none;
+      color: #E4E4E4;
+      font-size: 10px;
+      width: 20px;
+      height: 30px;
+      line-height: 28px;
+  }
+  p.header-fill .brand .logo-dark, .nav-wrap.header-fill .brand-widescreen .logo-dark {
     padding: 8px;
     opacity: 0;
   }
@@ -80,17 +103,8 @@ span.wpcf7-not-valid-tip {
   color: #bf6565;
 }
 
-.counter-content .counter1 i {
+.counter-content i {
     color: #20D6B2;
-}
-.counter-content .counter2 i{
-  color: #1CCBA8;
-}
-.counter-content .counter3 i{
-  color: #18BD9C;
-}
-.counter-content .counter4 i{
-  color: #16AD8F;
 }
 
 .masonry { margin: 40px 0px; padding: 0; -moz-column-gap: 0px; -webkit-column-gap: 0px; column-gap: 0px; font-size: .85em; } 
@@ -198,29 +212,79 @@ span.wpcf7-not-valid-tip {
   background-image: url('../img/noisy_net.png');  
 }
 #about{
-  background: rgba(255,255,255,.47);
+  background: rgba(218, 218, 218, 0.5);
 }
 #work{ 
   background-image: url('../img/cream_pixels.png');  
 }
+#contact{ 
+  background-image: url('../img/fondo3.jpeg');  
+  background-size: cover;
+}
+
+.efecto{ 
+  width: 100%;
+  height: 100%;
+  background: rgba(10,30,30,.8);  
+}
+.counter-content{ 
+  background-image: url('../img/fondo1.jpg');  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .counter-content {
   border-top: 0px solid #25282b;
+}
+.counter-content .counter {
+    border-right: 1px solid #8a85854d;
+    border-top: 1px solid #8a85854d;
 }
 .counter-content .label {
   font-family: "Santral Light";
   text-transform: capitalize;
 }
 
-.aboutme p{
-  -webkit-column-count: 2;  
-  -moz-column-count: 2;   
-  column-count: 2;
+
+#skills{
+  padding-top: 40px;
+}
+#skills h4{
+  color: #EDEDED;
+}
+
+#work{ 
+  min-height: 80vh;
 }
 #work h1{
   color: #343434;
 }
 #works a{
-  cursor: pointer;
+ cursor: pointer;
+}
+#work .botones .btn-portfolio {
+    color: #5D5D5D;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin: 0px;
+    padding: 2px 5px;
+    font-size: .7em;
+    font-weight: 400;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+#work .botones .btn-portfolio:hover{
+    color: #323232;
+}
+#work .botones .btn-portfolio:focus{
+    border:0;outline:0 none;
+}
+#work .botones .active,
+#work .botones .btn-portfolio:focus{
+    border-bottom: 3px solid #323232;
 }
 
 
@@ -246,17 +310,16 @@ span.wpcf7-not-valid-tip {
 }
 #gallery .close{
   position: absolute;
-  top: -10px ;
-  right: -10px;
-  background: black;
-  color: #fff;
-  padding: 0px 4px;
-  padding-bottom: 1px;
+  top: 0px ;
+  right: 0px;
+  background: #101010;
+  font-size: 20px;
+  line-height: 20px;
+  color: #B8B8B8;
+  padding: 10px;
   text-shadow: 0 0px 0 #fff; 
   z-index: 999;
   opacity: 1;
-  border:1px solid #fff;
-  border-radius: 50%;
 }
 #gallery .content::-webkit-scrollbar {
     width: 4px;
@@ -286,18 +349,8 @@ span.wpcf7-not-valid-tip {
   background: #AFAFAF; 
 }
 
-
-
-
 #contact{ 
-  background-image: url('../img/fondo3.jpeg');  
-  background-size: cover;
   min-height: 20vh;
-}
-#contact .efecto{ 
-  width: 100%;
-  height: 100%;
-  background: rgba(10,30,30,.8);  
 }
 #contact h1{
   color: #E2E2E2;
@@ -376,28 +429,8 @@ span.wpcf7-not-valid-tip {
   font-family: "Santral Light";
   color: #4a4a4a;
 }
-.botones .btn-portfolio {
-    color: #EEEEEE;
-    outline: none;
-    background-color: rgba(70, 70, 70, .9);
-    border: none;
-    border-radius: 40px;
-    margin: 10px 0;
-    padding: 5px 10px;
-    font-size: 10px;
-}
-.botones .btn-portfolio:hover{
-    color: #EEEEEE;
-    background-color: rgba(40, 40, 40, .9);
-}
-.botones .btn-portfolio:focus{
-    border:0;outline:0 none;
-}
-.botones .active,
-.botones .btn-portfolio:focus{
-    color: #EEEEEE;
-    background-color:  #11AC8D;
-}
+
+
 .main-footer h4,
 .main-footer h6{
     color: #e2e2e2;
@@ -411,10 +444,74 @@ span.wpcf7-not-valid-tip {
 .main-footer h4{
     font-size: 14px;
 }
-@media (max-width: 400px){
-  .aboutme p{
-    -webkit-column-count: 1;  
-    -moz-column-count: 1;   
-    column-count: 1;
+.skillbar {
+    position:relative;
+    display:inline-block;
+    margin-bottom:30px;
+    width:90%;
+    background:#eee;
+    height:15px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
 }
+ 
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+ 
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:15px;
+    line-height:14px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+ 
+.skillbar-bar {
+    height:15px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+ 
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:15px;
+    line-height:14px;
+    color:#444;
+    color:rgba(0, 0, 0, 0.4);
 }
