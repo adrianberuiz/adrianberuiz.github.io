@@ -343,6 +343,7 @@ button {
   }
   .nav-wrap.header-fill .brand .logo-dark, .nav-wrap.header-fill .brand-widescreen .logo-dark {
     opacity: 1;
+    padding: 8px;
   }
   .nav-wrap.header-fill .brand .logo-white, .nav-wrap.header-fill .brand-widescreen .logo-white {
     opacity: 0;

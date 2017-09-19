@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">    
 </head>
 <body data-smooth-scroll="true" class="no-touchy" cz-shortcut-listen="true">
-<div class="animsition-overlay" data-animsition-overlay="false" style="opacity: 1;">
+<div class="animsition-overlay" data-animsition-overlay="true" style="opacity: .95;">
 
     <header>
 
@@ -176,7 +176,7 @@
             <div id="skills" class="container-fluid space-x-y dark-bg">
                 <div class="row">
                     <h4>Habilidades</h4>
-                    <div class="col-md-12 col-sm-12" style="padding: 20px;">
+                    <div class="col-md-12 col-sm-12 animated" style="padding: 20px;" data-animation="fadeInUp">
                         <div class="col-md-4" style="padding-left: 0;">
                             <div class="skillbar clearfix " data-percent="95%">
                                 <div class="skillbar-title" style="background: #229780;"><span>HTML5</span></div>
@@ -243,7 +243,7 @@
                                 <div class="skillbar-bar" style="background: #20D6B2;"></div>
                                 <div class="skill-bar-percent">50%</div>
                             </div>
-                            <div class="skillbar clearfix animated" data-percent="70%" data-animation="fadeInUp">
+                            <div class="skillbar clearfix" data-percent="70%" >
                                 <div class="skillbar-title" style="background: #20D6B2;"><span>Photoshop</span></div>
                                 <div class="skillbar-bar" style="background: #20D6B2;"></div>
                                 <div class="skill-bar-percent">70%</div>
@@ -405,7 +405,7 @@
                             <h1 class="section-header">Contacto</h1>
                         </div>
                         <div class="col-md-6">
-                            <form action="" method="post" class="" novalidate="">
+                            <form class="">
                                 <input type="text" placeholder="Nombre">
                                 <input type="text" placeholder="Email">
                                 <input type="text" placeholder="Descripción">
@@ -462,12 +462,12 @@
             </div>
         </nav>
         <!-- /nav -->
-        <audio id="music" autoplay><source src="music/Truth to power.mp3" type="audio/mpeg"></audio> 
+        <!-- <audio id="music" autoplay><source src="music/Truth to power.mp3" type="audio/mpeg"></audio> 
         <a id="btn-music">
             <span class="fa-stack fa-lg">
               <i class="fa fa-music fa-stack-1x"></i>
             </span>
-        </a>
+        </a> -->
         <a href="#" class="back-to-top" style="display: block;"><img src="img/logo-white.png" class="logo-white retina-img" style="height: 70%;"></a>
     </div>
     <script src="js/jquery.1.12.4.js"></script>
@@ -498,17 +498,17 @@
     <script>
    
     $(document).ready(function(){
-        var music = document.getElementById("music");
-        music.volume = 0.5; 
-        $("#btn-music").click(function(){
-            if (music.paused == false) {
-                music.pause();
-                $("#btn-music .fa-stack").append('<i class="fa fa-ban fa-stack-2x text-danger"></i>'); 
-            }else {
-                music.play();
-                 $("#btn-music .fa-ban").remove();
-            }
-        });
+        // var music = document.getElementById("music");
+        // music.volume = 0.5; 
+        // $("#btn-music").click(function(){
+        //     if (music.paused == false) {
+        //         music.pause();
+        //         $("#btn-music .fa-stack").append('<i class="fa fa-ban fa-stack-2x text-danger"></i>'); 
+        //     }else {
+        //         music.play();
+        //          $("#btn-music .fa-ban").remove();
+        //     }
+        // });
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
                 width:$(this).attr('data-percent')
