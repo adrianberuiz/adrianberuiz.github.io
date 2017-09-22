@@ -33,9 +33,7 @@
 </head>
 <body data-smooth-scroll="true" class="no-touchy" cz-shortcut-listen="true">
 <div class="animsition-overlay" data-animsition-overlay="true" style="opacity: .95;">
-
     <header>
-
         <div class="nav-wrap is-fixed is-shrink off-canvas header-fill smaller is-fill" data-is-fill="true">
 
             <div class="container-fluid">
@@ -139,11 +137,10 @@
             <div id="home" class="pages">
                 <div id="banner" class="banner">
                     <ul id="scene" class="scene">
-                        <li class="layer l1" data-depth="0.15"><img src="img/fondo2.jpg"></li>
-                        <li style="position: absolute; top:0;left: 0;right: 0;bottom: 0;background: rgba(10,30,30,.75);"></li>
+                        <li class="layer l1" data-depth="0.1"><img src="img/landscape.jpg"></li>
+                        <li style="position: absolute; top:0;left: 0;right: 0;bottom: 0;background: rgba(18, 25, 10, 0.50);"></li>
                         <li class="layer l2" data-depth="0.0"><h1>Adrian Bello</h1></li>
-                        <li class="layer l3" data-depth="0.0"><h5>Desarrollador Web</h5></li>
-                        <li class="layer l4" data-depth="0.0"><a href="#work" data-scroll="" class="scrollTo"><span>Ver portafolio</span></a></li>
+                        <li class="layer l4" data-depth="0.0"><a href="#about" data-scroll="" class="scrollTo"><i class="ion-ios-arrow-down"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -152,13 +149,13 @@
         <div id="about" class="pages" >
             <div class="container-fluid space-x">
                 <div class="row" style="font-family: 'Century Gothic';padding-top: 40px;">
-                    <div class="col-md-12 col-sm-12" style="padding: 20px;padding-bottom: 0;">
-                        <div class="col-md-7 col-sm-12 aboutme" style="padding: 20px;padding-bottom: 0;">
-                            <h1 style="margin-bottom: 40px;" class="section-header">Sobre mi</h1>
-                            <p style="font-size: 16px;margin-bottom: 20px;text-align: justify;">Mi nombre es Adrian Bello, vivo en Caracas, Venezuela.
-                            <br><br>
+                    <div class="col-md-12 col-sm-12" style="padding: 60px;padding-bottom: 0;">
+                        <div class="col-md-6 col-sm-12 aboutme" style="padding: 20px;padding-bottom: 0;">
+                            <h1 style="margin-bottom: 40px;" class="section-header">Mi Historia</h1>
+                            <p style="font-size: 13px;margin-bottom: 10px;text-align: justify;">Mi nombre es Adrian Bello, vivo en Caracas, Venezuela.
+                            <br>
                             Soy un Desarrollador Web y Aplicaciones móviles, graduado de Ingeniero de Informática. Tengo 2 años de experiencia comercial.
-                            <br><br>
+                            <br>
                             Parte de mi experiencia laboral es trabajar en un agencia como Desarrollador Web, por otro lado como freelencer remoto con diversos clientes, proporcionando el desarrollo de alta calidad, con un diseño simple e intuitivo
                             <br><br>
                             En otro orden de ideas y no menos importante puedo decir que una guitarra desafinada, un piano sin dejar de sonar, unos trazos que se convierten en dibujos, y una familia y amigos que valen oro, ocupan mi tiempo libre. 
@@ -175,9 +172,9 @@
             </div>
             <div id="skills" class="container-fluid space-x-y dark-bg">
                 <div class="row">
-                    <h4>Habilidades</h4>
+                    <h4 style="font-family: 'Santral Light'; font-size: 2em;padding: 0px 40px;">Habilidades</h4>
                     <div class="col-md-12 col-sm-12 animated" style="padding: 20px;" data-animation="fadeInUp">
-                        <div class="col-md-4" style="padding-left: 0;">
+                        <div class="col-md-4" style="padding: 20px;">
                             <div class="skillbar clearfix " data-percent="95%">
                                 <div class="skillbar-title" style="background: #229780;"><span>HTML5</span></div>
                                 <div class="skillbar-bar" style="background: #229780;"></div>
@@ -200,7 +197,7 @@
                                 <div class="skill-bar-percent">60%</div>
                             </div>
                         </div>
-                        <div class="col-md-4" style="padding-left: 0;">
+                        <div class="col-md-4" style="padding: 20px;">
                             <div class="skillbar clearfix " data-percent="99%">
                                 <div class="skillbar-title" style="background: #229780;"><span>PHP</span></div>
                                 <div class="skillbar-bar" style="background: #229780;"></div>
@@ -227,7 +224,7 @@
                                 <div class="skill-bar-percent">60%</div>
                             </div>
                         </div>
-                        <div class="col-md-4" style="padding-left: 0;">
+                        <div class="col-md-4" style="padding: 20px;">
                             <div class="skillbar clearfix " data-percent="60%">
                                 <div class="skillbar-title" style="background: #20D6B2;"><span>Ajax</span></div>
                                 <div class="skillbar-bar" style="background: #20D6B2;"></div>
@@ -300,54 +297,78 @@
                 </div>
                 <div class="space-y-b">
                     <div id="works" class="masonry fadeAnim" data-animate-type="quicksand">
-                        <div class="item filter web">
-                            <a class="info">
-                                <img src="img/ClasGo.jpg" alt="">
-                                <div class="info-detalles" style="background: #1c3260;">
-                                    <div class="detalles">
-                                        <span>Web Development</span>
-                                        <h4>ClasGo</h4>
-                                        <p>Html, CSS, PHP, Boostrap, Jquery, Ajax</p>
-                                    </div>
+                        <div class="col-md-4 item filter web">                                
+                            <h4>ClasGo</h4>
+                            <div class="info">
+                                <div class="detalles">
+                                    <a class="ver">
+                                        <i class="ion-android-laptop" aria-hidden="true"></i>
+                                        <span>Detalles</span>
+                                    </a>
+                                    <a class="link" target="_blank" href="http://www.clasgo.com/">
+                                        <i class="ion-link" aria-hidden="true"></i>
+                                        <span>Visitar Web</span>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="image">   
+                                    <img src="img/ClasGo.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="item filter web">
-                            <a class="info">
-                                <img src="img/Sybven.jpg" alt="">
-                                <div class="info-detalles" style="background: #06847A;">
-                                    <div class="detalles">
-                                        <span>Web Development</span>
-                                        <h4>Sybven</h4>
-                                        <p>Wordpress, Html, CSS, PHP, Parallax, Boostrap</p>
-                                    </div>
+                        <div class="col-md-4 item filter web">
+                            <h4>Sybven</h4>
+                            <div class="info">
+                                <div class="detalles">
+                                    <a class="ver">
+                                        <i class="ion-android-laptop" aria-hidden="true"></i>
+                                        <span>Detalles</span>
+                                    </a>
+                                    <a class="link" target="_blank" href="https://www.sybven.com/">
+                                        <i class="ion-link" aria-hidden="true"></i>
+                                        <span>Visitar Web</span>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="image">
+                                    <img src="img/Sybven.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="item filter web">
-                            <a class="info">
-                                <img src="img/Synergizefit.jpg" alt="">
-                                <div class="info-detalles" style="background: #A5131D;">
-                                    <div class="detalles">
-                                        <span>Web Development</span>
-                                        <h4>Synergizefit</h4>
-                                        <p>Wordpress, Html, CSS, PHP, Jquery</p>
-                                    </div>
+                        <div class="col-md-4 item filter web">
+                            <h4>Synergizefit</h4>
+                            <div class="info">
+                                <div class="detalles">
+                                    <a class="ver">
+                                        <i class="ion-android-laptop" aria-hidden="true"></i>
+                                        <span>Detalles</span>
+                                    </a>
+                                    <a class="link" target="_blank" href="http://synergizefit.com/">
+                                        <i class="ion-link" aria-hidden="true"></i>
+                                        <span>Visitar Web</span>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="image">
+                                    <img src="img/synergizefit.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     
-                        <div class="item filter web">
-                            <a  class="info">
-                                <img src="img/activatuevento.png" alt="">
-                                <div class="info-detalles" style="background: #FD9C02;">
-                                    <div class="detalles">
-                                        <span>Web Development</span>
-                                        <h4>Activatuevento</h4>
-                                        <p>Html, CSS, PHP, Parallax, Boostrap, Jquery, Ajax</p>
-                                    </div>
+                        <div class="col-md-4 item filter web">
+                            <h4>Activatuevento</h4>
+                            <div class="info">
+                                <div class="detalles">
+                                    <a class="ver">
+                                        <i class="ion-android-laptop" aria-hidden="true"></i>
+                                        <span>Detalles</span>
+                                    </a>
+                                    <a class="link" target="_blank" href="http://activatuevento.com/">
+                                        <i class="ion-link" aria-hidden="true"></i>
+                                        <span>Visitar Web</span>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="image">
+                                    <img src="img/activatuevento.png" alt="">
+                                </div>
+                            </div>
                         </div>
                         
 
@@ -419,6 +440,14 @@
                             <p><i class="fa fa fa-envelope-o"></i>  adrianberuiz@gmail.com</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="gallery">
+            <div class="content">
+                <a class="close"><i class="ion-close"></i></a>
+                <div class="contenido">
+                    <img src="" alt="">
                 </div>
             </div>
         </div>
@@ -495,6 +524,7 @@
     <script src="js/retina.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/parallax.min.js"></script>
+
     <script>
    
     $(document).ready(function(){
@@ -514,16 +544,14 @@
                 width:$(this).attr('data-percent')
             },4000);
         });
-        $(".item a").click(function(){
-            var img = $(this).find("img").attr("src");
-            $( "#gallery .modal-body img").attr("src",img);
-            $("html").css("overflow","hidden");
-            $("body").css("overflow","hidden");
-            $('#gallery').modal();
+        $(".item .ver").click(function(){
+            var img = $(this).parent().parent().find("img").attr("src");
+            img=img.replace("img/","img/lg_");
+            $("#gallery img").attr("src",img);
+            $('#gallery').show();
         });
-        $('#gallery').on('hidden.bs.modal', function () {
-            $("html").css("overflow","visible");
-            $("body").css("overflow","visible");
+        $('#gallery .close').click(function(){
+            $('#gallery').hide();          
         });
         $(".filter-button").click(function(){
             $(".filter-button").removeClass("active");
@@ -547,19 +575,5 @@
     </script>
 
     <div class="mm-menu-mask"></div>
-    <!-- Modal -->
-    <div class="modal fade" id="gallery" tabindex="-1" role="dialog" >
-        <a class="close" data-dismiss="modal" aria-label="Close"><i class="ion-close"></i></a>
-        <div class="modal-dialog modal-lg" role="document">
-        
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="content">
-                    <img src="" alt="">
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

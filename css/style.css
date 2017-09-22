@@ -27,12 +27,16 @@ body::-webkit-scrollbar-thumb:window-inactive {
   background: #AFAFAF; 
 }
 @font-face {
-  font-family: "Santral Light";
-  src: url("../fonts/fonts/Santral-Light.otf");
+  font-family: "SkarpaLt";
+  src: url("../fonts/fonts/SkarpaLt.ttf");
 }
 @font-face {
-  font-family: "SciFly Sans";
-  src: url("../fonts/fonts/SciFly-Sans.ttf");
+  font-family: "RofiTaste";
+  src: url("../fonts/fonts/RofiTaste.otf");
+}
+@font-face {
+  font-family: "Santral Light";
+  src: url("../fonts/fonts/Santral-Light.otf");
 }
 @font-face {
   font-family: "Ubuntu-M";
@@ -47,7 +51,7 @@ body::-webkit-scrollbar-thumb:window-inactive {
     opacity: .92;
 }
 .modal-backdrop {
-    background-color: #141C1A;
+    background-color: #4A5250;
 }
 .modal-body {
     padding: 0px;
@@ -106,89 +110,92 @@ span.wpcf7-not-valid-tip {
 .counter-content i {
     color: #20D6B2;
 }
-
-.masonry { margin: 40px 0px; padding: 0; -moz-column-gap: 0px; -webkit-column-gap: 0px; column-gap: 0px; font-size: .85em; } 
-.masonry .item { 
-  margin: 0; 
-  padding: 5px;
-  width: 100%; 
-  display: block;
-  position: relative;
+.masonry { 
+  margin: 40px 0px; 
+  padding: 0; 
+  display: inline-block; 
 } 
-
-.masonry .item img {
-  width: 100%;
-  height: auto;
+.masonry .item{ 
+  margin-bottom: 20px;
 }
-.masonry .item .info{ 
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-} 
-.masonry .item .info-detalles{ 
-  position: absolute;
-  top:10px; 
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-} 
-.masonry .item .info .detalles{ 
-  position: absolute;
-  left: 15px;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
-  -webkit-transform:  scale(1.05);
-  -moz-transform:  scale(1.05);
-  -ms-transform:  scale(1.05);
-  -o-transform:  scale(1.05);
-  transform: scale(1.05);
-  webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
-  -moz-transition: -moz-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
-} 
-.masonry .item .detalles span{ 
-  color: #fff;
-  font-size: 9px;
-  font-family: "Jaapokki-Regular";
-  text-transform: uppercase;
-}
-.masonry .item .detalles h4{ 
-  color: #fff;
+.masonry .item h4{ 
+  padding: 10px;
   margin: 0;
-  margin-top: 20px;
-  font-family: "Jaapokki-Regular";
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 28px
-}
-.masonry .item .detalles p{ 
-  color: #fff;
-  margin: 0;
+  color: #757575;
   font-family: "Santral Light";
   text-transform: capitalize;
-  font-size: 12px
+  font-size: 15px
+} 
+.masonry .item .info{ 
+  border-radius: 4px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.6);
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.masonry .item .info a {
+  display: inline-block;
+}
+.masonry .item .info .detalles{
+  position: absolute;
+  top: 0 ;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 99;
+  padding: 55px 10px;
+  transition: opacity .3s ease-in-out;
+  background: rgba(18, 25, 10, 0.60);
+  text-align: center;
+}
+.masonry .item .info .detalles a{
+  vertical-align: middle;
+  width: 30%;
+  margin: 0px 4px;
+  background: #fff;
+  padding: 55px 10px;
+  text-align: center;
+}
+.masonry .item .info .detalles .ver{
+  background: #fff;
+  color: #616161;
+}
+.masonry .item .info .detalles .link{
+  background: #545454;
+  color: #fff;
 }
 
-.masonry .item:hover .info-detalles {
+.masonry .item .info .detalles a span{
+  font-size: .7em;
+  width: 100%;
+  display: block;
+}
+.masonry .item .info .detalles a i{
+  font-size: 3em;
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+.masonry .item .info:hover .detalles{
   opacity: 1;
 }
-
-.masonry .item:hover .detalles {
-  -webkit-transform:  scale(1);
-  -moz-transform:  scale(1);
-  -ms-transform:  scale(1);
-  -o-transform:  scale(1);
-  transform: scale(1);
+.masonry .item .info .image{ 
+  height: 300px;
+  max-height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
-@media only screen and (min-width: 400px) { .masonry { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; } } 
-@media only screen and (min-width: 700px) { .masonry { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; } } 
-@media only screen and (min-width: 900px) { .masonry { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; } } 
-@media only screen and (min-width: 1100px) { .masonry { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; } } 
+.masonry .item .info img {
+  width: 100%;
+  height: auto;
+} 
+.masonry .item:hover .detalles {
+  opacity: 0s;
+}
+
+
 .alm-btn-wrap{
   position: absolute;
   bottom: 0;
@@ -215,7 +222,7 @@ span.wpcf7-not-valid-tip {
   background: rgba(218, 218, 218, 0.5);
 }
 #work{ 
-  background-image: url('../img/cream_pixels.png');  
+  background: #fbfaf9;  
 }
 #contact{ 
   background-image: url('../img/fondo3.jpeg');  
@@ -301,53 +308,48 @@ span.wpcf7-not-valid-tip {
 
 
 
+#gallery {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  display: none;
+  z-index: 9999;
+  background: rgba(18, 25, 10, .8);
+}
 #gallery .content{
-  max-height: 550px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  left: 40px;
+  bottom: 40px;
+  background: #fff;
+  overflow: hidden;
+}
+#gallery .contenido{
   overflow-y: auto;
+  max-height: 100%;
+  margin-right: -18px;
+  position: relative;
 }
 #gallery img{
   width: 100%;
 }
 #gallery .close{
   position: absolute;
-  top: 0px ;
-  right: 0px;
-  background: #101010;
-  font-size: 20px;
-  line-height: 20px;
-  color: #B8B8B8;
+  top: 0;
+  right: 0;
+  background: #494848;
+  line-height: 10px;
+  font-size: 15px;
   padding: 10px;
-  text-shadow: 0 0px 0 #fff; 
+  color: #DDDCDC;
+  text-shadow: 0 0px 0 #fff;
   z-index: 999;
   opacity: 1;
 }
-#gallery .content::-webkit-scrollbar {
-    width: 4px;
-}
-/* Track */
-#gallery .content::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-    
-/* Handle */
-#gallery .content::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #C9C9C9;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
 
-#gallery .content::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #AFAFAF;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-#gallery .content::-webkit-scrollbar-thumb:window-inactive {
-  background: #AFAFAF; 
-}
 
 #contact{ 
   min-height: 20vh;
@@ -415,8 +417,9 @@ span.wpcf7-not-valid-tip {
   background: #20B699 url('../img/fondo.jpg');
 }
 .section-header {   
-  margin-bottom: 10px;
-   font-family: "Ubuntu-M";
+  margin-bottom: 40px;
+   font-family: "Santral Light";
+   font-size: 4em;
   text-transform: capitalize;
 }
 .standard-title{   
@@ -447,8 +450,8 @@ span.wpcf7-not-valid-tip {
 .skillbar {
     position:relative;
     display:inline-block;
-    margin-bottom:30px;
-    width:90%;
+    margin-bottom:20px;
+    width:100%;
     background:#eee;
     height:15px;
     border-radius:3px;
