@@ -35,42 +35,26 @@
 }
 
 .l2{
-  width: 100%
-}
-
-.l2 h1{
-  font-family: "RofiTaste";
-  font-size: 10em;
-  padding-top: 15%;
-  color: rgba(255,255,255,.7);
-  text-align: center !important;
-}
-.l3{
-  width: 100%
-}
-
-.l3 h5{
-  padding-top: 16%;
-  color: rgba(255,255,255,.7);
-  text-align: center !important;
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  opacity: .1;
 }
 .l4{
   width: 100%;
   text-align: center;
-  padding-top: 42%;
+  padding-top: 43.5%;
 }
 .l4 a{
-  color: rgba(255,255,255,.8);
-  font-size: 2.5em;
-  display: inline-block;
-  padding: 10px 35px;
+  padding: 10px;
   text-align: center !important;
-   webkit-transition: border 0.4s,color 0.4s;
-  -moz-transition: border 0.4s,color 0.4s;
-  transition: border 0.4s,color 0.4s;
+  opacity: .5;
+   webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 .l4 a:hover{
-  color: rgba(255,255,255,1);
+  opacity: 1;
 }
 @media (max-width: 900px){
   .l2 h1{
