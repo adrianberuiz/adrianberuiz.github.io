@@ -37,8 +37,14 @@
 .l2{
   width: 100%;
   text-align: center;
-  padding-top: 10%;
-  opacity: .1;
+  padding-top: 30%;
+  opacity: .92;
+}
+.l3{
+  width: 100%;
+  text-align: center;
+  padding-top: 16%;
+  opacity: 1;
 }
 .l4{
   width: 100%;
