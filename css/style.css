@@ -27,12 +27,8 @@ body::-webkit-scrollbar-thumb:window-inactive {
   background: #AFAFAF; 
 }
 @font-face {
-  font-family: "SkarpaLt";
-  src: url("../fonts/fonts/SkarpaLt.ttf");
-}
-@font-face {
-  font-family: "Humblle";
-  src: url("../fonts/fonts/Humblle Rought.otf");
+  font-family: "QUARTZO";
+  src: url("../fonts/fonts/QUARTZO.ttf");
 }
 @font-face {
   font-family: "Santral Light";
@@ -109,6 +105,38 @@ span.wpcf7-not-valid-tip {
 
 .counter-content i {
     color: #20D6B2;
+}
+.jumbotron{
+  color: #ffffff;
+  position: relative;
+}
+.jumbotron .scroll{
+  position: absolute;
+  bottom: 10px;
+  left: 47%;
+  width: 6%;
+}
+.jumbotron .btn{
+  font-family: "Ubuntu-M";
+  /*padding-bottom: 4px;*/
+  font-size: 1em;
+}
+.jumbotron .btn-ghost{
+  background: transparent;
+  border: 1px solid #EEEEEE;
+  color: #EEEEEE;
+   webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.jumbotron .btn-ghost:hover{
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.jumbotron .btn-white{
+  background: white;
+  color: #0F7255;
+  margin-left: 10px;
 }
 .portfolio { 
   display: inline-block;
@@ -198,8 +226,42 @@ span.wpcf7-not-valid-tip {
   line-height: 25px;
 } 
 
+.main-footer{
+  background: #1B725D;
+}
+.menu-footer li{
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 10px 20px;
+}
+.menu-footer li a{
+  color: #ffffff;
+}
+footer .redes  li{
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 25px 10px;
+}
+footer a{
+  opacity: .8;
+   webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+footer a:hover{
+  opacity: 1;
+}
+footer .redes li a .fa{
+  color: #1B725D;
+}
+footer .redes li a .fa-circle{
+  color: #ffffff;
+}
 
-
+footer .container{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: 20px 0px;
+}
 .alm-btn-wrap{
   position: absolute;
   bottom: 0;
@@ -224,7 +286,7 @@ span.wpcf7-not-valid-tip {
   height: 100%;
   background: rgba(10,30,30,.8);  
 }
-.dark-bg,.deco-parting,#logos,.mm-menu, .main-footer,#services{ 
+.dark-bg,.deco-parting,#logos,.mm-menu, #services{ 
   background-image: url('../img/noisy_net.png');  
 }
 #about{
