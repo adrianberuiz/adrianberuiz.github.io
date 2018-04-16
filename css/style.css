@@ -140,15 +140,15 @@ span.wpcf7-not-valid-tip {
 }
 .portfolio { 
   display: inline-block;
-  padding-right: 70px;
-  padding-left: 70px; 
 } 
 .portfolio .filter{ 
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .portfolio .item{ 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.1);
   -webkit-box-shadow: 0 10px 6px -6px #B2B2B2;
   -moz-box-shadow: 0 10px 6px -6px #B2B2B2;
   box-shadow: 0 10px 6px -6px #B2B2B2;
@@ -294,10 +294,10 @@ footer .container{
 }
 #skills{ 
   min-height: 90vh;
-  background-image: url('../img/noisy_net.png');  
+  background-image: url('../img/noisy_net.png');   /*F5F5F5*/
 }
 #work{ 
-  background: #F5F5F5;  /*fbfaf9*/
+  background: #ffffff;  /*fbfaf9*/
 }
 #contact{ 
   background-image: url('../img/fondo3.jpeg');  
@@ -588,6 +588,7 @@ footer .container{
     margin-bottom: 10px;
     font-size: 11px;
     color: #C4C4C4;
+    padding-top: 15px;
 }
 .main-footer h4{
     font-size: 14px;
