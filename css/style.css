@@ -135,7 +135,11 @@ footer a{
 footer a:hover{
   opacity: 1;
 }
-footer .redes li a .fa{
+footer .redes {
+  text-align: center;
+}
+footer .redes li a .fab,
+footer .redes li a .far{
   color: #1B725D;
 }
 footer .redes li a .fa-circle{
@@ -322,6 +326,19 @@ footer .container{
 } 
 #skills{
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+#skills .skill {
+  text-align: center;
+  padding-bottom:20px;
+}
+#skills .skill .skill-title{
+  color:#cccccc;
+  font-family: "Santral Light";
+}
+#skills  .skill i{
+  color:#ffffff;
+  font-size: 4em;
 }
 #skills h1{
   color: #DEDEDE;
