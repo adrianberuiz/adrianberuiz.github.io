@@ -749,7 +749,7 @@ button {
 }
 @media (min-width: 993px) {
   .off-canvas .brand-band {
-    left: 0;
+/*    left: 0;*/
   }
 }
 .off-canvas .mm-button-band {

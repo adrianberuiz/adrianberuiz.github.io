@@ -113,11 +113,12 @@ span.wpcf7-not-valid-tip {
   font-family: "Raleway-Bold";
   /*padding-bottom: 4px;*/
   font-size: 1em;
+  padding: 5px 25px;
 }
 .jumbotron .btn-ghost{
   background: transparent;
-  border: 1px solid #EEEEEE;
-  color: #EEEEEE;
+  border: 1px solid rgba(255,255,255,.4);
+  color: rgba(255,255,255,.8);
    webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
@@ -346,6 +347,7 @@ span.wpcf7-not-valid-tip {
 }
 #services .standard-title{
   color: #343434;
+  font-family: "Raleway-Bold";
 }
 #services p{
   color: #565656;
@@ -488,6 +490,21 @@ footer .redes li a .fa-circle{
 footer .container{
   border-bottom: 1px solid rgba(255,255,255,.1);
   padding: 20px 0px;
+}
+
+
+/*      Cambios del tema original     */
+
+.content-box-side .box-side-details .box-side__header i {
+    float: left;
+    text-align: left;
+    margin-top: 6px;
+}
+.mm-button-band{
+  display: none;
+}
+.carna-menu-wrap{
+  text-align: right;
 }
 
 
