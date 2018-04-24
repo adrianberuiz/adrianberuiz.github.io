@@ -226,7 +226,7 @@ span.wpcf7-not-valid-tip {
 #work .botones .active,
 #work .botones .active:hover,
 #work .botones .btn-portfolio:focus{
-    background: #21d6b2;
+    background: #15DAA4;
 }
 #work .portfolio { 
   display: inline-block;
@@ -237,7 +237,7 @@ span.wpcf7-not-valid-tip {
 }
 #work .portfolio .item{ 
   margin-bottom: 15px;
-  border-radius: 4px;
+/*  border-radius: 4px;*/
   border: 1px solid rgba(0,0,0,.1);
   -webkit-box-shadow: 0 10px 6px -6px #B2B2B2;
   -moz-box-shadow: 0 10px 6px -6px #B2B2B2;
@@ -245,8 +245,8 @@ span.wpcf7-not-valid-tip {
 }
 #work .portfolio .item .info{ 
   background: #fff;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+/*  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;*/
   max-height: 230px;
   width: 100%;
   overflow: hidden;
@@ -262,7 +262,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: auto;
 }
-#work .portfolio .item .info .botones{
+#work .portfolio .item .info .details{
   position: absolute;
   top: 0 ;
   bottom: 0;
@@ -270,52 +270,69 @@ span.wpcf7-not-valid-tip {
   right: 0;
   opacity: 0;
   z-index: 99;
-  padding: 55px 10px;
+  padding: 70px 10px;
   transition: opacity .3s ease-in-out;
-  background: rgba(18, 25, 10, 0.4);
+  background: rgba(5, 5, 5, 0.9);
 }
-#work .portfolio .item .info .botones a{
+#work .portfolio .item .info .details a{
   display: inline-block;
-  width: 55px;
   position: absolute;
   border-radius: 4px;
   margin: 0px 4px;
   padding: 10px;
   text-align: center;
-  font-size: 2em;
+  
 }
-#work .portfolio .item .info .botones .ver{
-  background: #fff;
-  color: #616161;
+#work .portfolio .item .info .details .ver{
+  background: rgba(19,149,209,1);
+background: -moz-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(19,149,209,1)), color-stop(100%, rgba(6,179,110,1)));
+background: -webkit-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
+background: -o-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
+background: linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', endColorstr='#06b36e', GradientType=1 );
+  color: #fff;
+  font-size: 12px;
   bottom: 10px;
   right: 80px;
+  font-family: "Raleway-Light";
+  text-transform: capitalize;
 }
-#work .portfolio .item .info .botones .link{
-  background: #545454;
-  color: #fff;
+#work .portfolio .item .info .details .ver i{
+  line-height: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+#work .portfolio .item .info .details .link{
+  background: #ffffff;
+  width: 55px;
+  font-size: 1.4em;
+  color: #616161;
   bottom: 10px;
   right: 10px;
 }
-#work .portfolio .item .info:hover .botones{
+#work .portfolio .item .info:hover .details{
   opacity: 1;
 }
 #work .portfolio .item .detalles{
-  background: #fff;
-  margin-top: -4px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  
 }
 #work .portfolio .item .detalles h4{ 
-  padding: 10px 10px;
-  padding-bottom: 5px;
-  margin: 5px;
-  color: #535353;
+  color: #1BD394;
+  font-family: "Raleway-Bold";
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+} 
+#work .portfolio .item .detalles p{ 
+  color: #C8C8C8;
   font-family: "Raleway-Light";
   text-transform: capitalize;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
 } 
-
 
 
 #skills{
@@ -344,13 +361,36 @@ span.wpcf7-not-valid-tip {
 
 #services h1{
   color: #343434;
+  
+}
+#services .content-box-side .box-side-details {
+    margin-left: 0px;
+    padding: 20px;
+    background: rgba(0,0,0,.05);
+    min-height: 365px;
+}
+#services i{
+  color: #343434;
+  font-size: 4em;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+#services .box-side__header{
+  text-align: center;
+   color: #343434;
 }
 #services .standard-title{
-  color: #343434;
   font-family: "Raleway-Bold";
+  text-transform: uppercase;
+  width: 100%;
 }
 #services p{
-  color: #565656;
+  color: #000000;
+  font-size: 13px;
 }
 
 
@@ -399,7 +439,7 @@ span.wpcf7-not-valid-tip {
   bottom: 0;
   display: none;
   z-index: 9999;
-  background: rgba(18, 25, 10, .8);
+  background: rgba(5, 5, 5, .9);
 }
 #gallery .content{
   position: absolute;
@@ -423,7 +463,7 @@ span.wpcf7-not-valid-tip {
   position: absolute;
   top: 0;
   right: 0;
-  background: #3f4539;
+  background: #1e1e1e;
   line-height: 10px;
   font-size: 15px;
   padding: 10px;
