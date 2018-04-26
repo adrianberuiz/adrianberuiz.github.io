@@ -81,7 +81,7 @@ span.wpcf7-not-valid-tip {
   margin-top: 20px;
   font-family: "Raleway-Bold";
   font-size: 2em;
-  opacity: .8;
+  opacity: 1;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -159,10 +159,15 @@ span.wpcf7-not-valid-tip {
   font-family: "Raleway-Light";
 }
 #services{ 
-  background: #E8E8E8;  /*fbfaf9*/
+  background-image: url('../img/services.jpg');  
+  background-size: 100% 98%;
+  background-repeat: no-repeat;
+
+/*  background: #E8E8E8; */ /*fbfaf9*/
 }
 #skills{ 
-  background-image: url('../img/noisy_net.png');   /*F5F5F5*/
+  background: #1a1f24;
+  /*background-image: url('../img/noisy_net.png');   /*F5F5F5*/*/
 }
 #work{ 
   background: #ffffff;  /*fbfaf9*/
@@ -346,10 +351,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 #skills .skill .skill-title{
   color:#cccccc;
   font-family: "Raleway-Light";
+  font-size: 14px;
 }
 #skills  .skill i{
   color:#ffffff;
-  font-size: 4em;
+  font-size: 3em;
+}
+#skills  .skill .icono{
+  height: 48px;
+  padding: 5px;
 }
 #skills h1{
   color: #DEDEDE;
@@ -360,17 +370,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 
 
 #services h1{
-  color: #343434;
+  color: #ffffff;
   
 }
 #services .content-box-side .box-side-details {
     margin-left: 0px;
     padding: 20px;
-    background: rgba(0,0,0,.05);
+    background: rgba(255,255,255,.95);
     min-height: 365px;
 }
 #services i{
-  color: #343434;
+  color: #525252;
   font-size: 4em;
   width: 100%;
   margin-top: 0px;
@@ -381,7 +391,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 
 #services .box-side__header{
   text-align: center;
-   color: #343434;
+   color: #525252;
 }
 #services .standard-title{
   font-family: "Raleway-Bold";
@@ -389,7 +399,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
   width: 100%;
 }
 #services p{
-  color: #000000;
+  color: #333333;
   font-size: 13px;
 }
 
@@ -402,32 +412,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
   font-size: 1em;
 }
 
-#about .how-work{
-  padding-top: 70px;
-  text-align: center;
-}
 #about .how-work h6{
   text-transform: uppercase;
   font-family: "Raleway-Bold";
   font-size: 1em;
   display: block;
 }
-#about .how-work i{
-  color: #20D6B2;
-  font-size: 3em;
+#about .how-work .icono{
+  width: 80px;
   text-align: center;
+  display: inline-block;
 }
-#about .how-work span i{
-  color: #B2B2B2;
-  font-size: 2em;
-}
-#about .how-work .espacio{
-  padding-top: 15px;
-}
-#about .how-work .label{
-  font-family: "Raleway-Light";
-  text-transform: uppercase;
-  color: #B2B2B2;
+#about .how-work i{
+  color: #646464;
+  font-size: 4em;
 }
 
 
@@ -546,7 +544,10 @@ footer .container{
 .carna-menu-wrap{
   text-align: right;
 }
-
+.l-portfolio {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
 
 @media (max-width: 993px){
   .jumbotron{
