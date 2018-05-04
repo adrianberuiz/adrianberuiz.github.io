@@ -160,8 +160,7 @@ span.wpcf7-not-valid-tip {
 }
 #services{ 
   background-image: url('../img/services.jpg');  
-  background-size: 100% 98%;
-  background-repeat: no-repeat;
+   background-size: cover;
 
 /*  background: #E8E8E8; */ /*fbfaf9*/
 }
@@ -368,7 +367,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
   color: #EDEDED;
 }
 
-
+#services{
+  padding-bottom: 60px;
+  }
 #services h1{
   color: #ffffff;
   
