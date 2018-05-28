@@ -42,7 +42,39 @@ body::-webkit-scrollbar-thumb:window-inactive {
   font-family: "Santral Light";
   src: url("../fonts/fonts/Santral-Light.otf");
 }
+/*      Cambios del tema original     */
 
+.content-box-side .box-side-details .box-side__header i {
+    float: left;
+    text-align: left;
+    margin-top: 6px;
+}
+.mm-button-band #mm-menu-toggle{
+  display: none;
+}
+.carna-menu-wrap{
+  text-align: right;
+}
+.l-portfolio {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.carna-menu-wrap {
+    text-align: center !important;
+}
+
+.alm-btn-wrap{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.mm-menu a{
+  color: #00C191;
+}
 .modal-backdrop.in {
     filter: alpha(opacity=90);
     opacity: .92;
@@ -73,6 +105,37 @@ body::-webkit-scrollbar-thumb:window-inactive {
 span.wpcf7-not-valid-tip {
   color: #bf6565;
 }*/
+.mm-button-band .redes{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.mm-button-band .redes > li {
+    display: inline-block;
+    float: left;
+}
+.mm-button-band .redes > li > a {
+    padding: 0 14px;
+    display: inline-block;
+    height: 82px;
+    line-height: 82px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #f0f0f0;
+    outline: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-tap-highlight-color: transparent;
+}
+.is-fill .mm-button-band .redes > li > a {
+    height: 54px;
+    line-height: 54px;
+    color: #212121;
+}
 .infograph-container {   
   background: #20B699 url('../img/fondo.jpg');
 }
@@ -133,19 +196,6 @@ span.wpcf7-not-valid-tip {
   margin-left: 10px;
 }
 
-
-.alm-btn-wrap{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  padding: 20px;
-}
-
-.mm-menu a{
-  color: #00C191;
-}
 .efecto{ 
   width: 100%;
   height: 100%;
@@ -159,10 +209,9 @@ span.wpcf7-not-valid-tip {
   font-family: "Raleway-Light";
 }
 #services{ 
-  background-image: url('../img/services.jpg');  
-   background-size: cover;
-
-/*  background: #E8E8E8; */ /*fbfaf9*/
+  /*background-image: url('../img/services.jpg');  
+   background-size: cover;*/
+  background: #193f42; /*fbfaf9*/
 }
 #skills{ 
   background: #1a1f24;
@@ -210,12 +259,12 @@ span.wpcf7-not-valid-tip {
 }
 #work .botones .btn-portfolio {
     font-family: "Raleway-Bold";
-    color: #5D5D5D;
+    color: #3e3e3e;
     outline: none;
     font-weight: bold;
     cursor: pointer;
     background: transparent;
-    border: 1px solid #21d6b2;
+    border: 1px solid #144448;
     margin: 0px;
     padding: 5px 8px;
     font-size: .7em;
@@ -230,7 +279,8 @@ span.wpcf7-not-valid-tip {
 #work .botones .active,
 #work .botones .active:hover,
 #work .botones .btn-portfolio:focus{
-    background: #15DAA4;
+    background: #144448;
+    color: #ffffff;
 }
 #work .portfolio { 
   display: inline-block;
@@ -319,9 +369,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 #work .portfolio .item .info:hover .details{
   opacity: 1;
 }
-#work .portfolio .item .detalles{
-  
-}
 #work .portfolio .item .detalles h4{ 
   color: #1BD394;
   font-family: "Raleway-Bold";
@@ -368,20 +415,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 }
 
 #services{
-  padding-bottom: 60px;
-  }
+  padding-bottom: 20px;
+}
 #services h1{
   color: #ffffff;
-  
 }
 #services .content-box-side .box-side-details {
-    margin-left: 0px;
-    padding: 20px;
-    background: rgba(255,255,255,.95);
-    min-height: 365px;
+  margin-left: 0px;
+  padding: 10px;
 }
 #services i{
-  color: #525252;
+  color: #fff;
   font-size: 4em;
   width: 100%;
   margin-top: 0px;
@@ -392,17 +436,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 
 #services .box-side__header{
   text-align: center;
-   color: #525252;
+  
 }
 #services .standard-title{
   font-family: "Raleway-Bold";
   text-transform: uppercase;
   width: 100%;
+  color: #ffffff;
+  padding-top: 14px;
 }
 #services p{
-  color: #333333;
+  color: #ECEBEB;
   font-size: 13px;
 }
+
+
 
 
 #about{
@@ -478,20 +526,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 .main-footer h4,
 .main-footer h6{
     color: #e2e2e2;
-    font-family: "Raleway-Light";
+    font-family: "Raleway-Medium";
 }
 .main-footer h6{
     margin-bottom: 10px;
-    font-size: 11px;
-    color: #C4C4C4;
-    padding-top: 15px;
+    font-size: 13px;
+    color: #2E2E2E;
+    padding-top: 8px;
 }
 .main-footer h4{
     font-size: 14px;
 }
 
 .main-footer{
-  background: #1B725D;
+  background: #BDBDBD;
 }
 .menu-footer li{
   display: inline-block;
@@ -532,23 +580,7 @@ footer .container{
 }
 
 
-/*      Cambios del tema original     */
 
-.content-box-side .box-side-details .box-side__header i {
-    float: left;
-    text-align: left;
-    margin-top: 6px;
-}
-.mm-button-band{
-  display: none;
-}
-.carna-menu-wrap{
-  text-align: right;
-}
-.l-portfolio {
-    padding-top: 40px;
-    padding-bottom: 80px;
-}
 
 @media (max-width: 993px){
   .jumbotron{
