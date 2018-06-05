@@ -339,10 +339,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 #work .portfolio .item .info .details .link{
   background: #ffffff;
   width: 55px;
-  font-size: 1.4em;
+  font-size: 1.35em;
   color: #616161;
   bottom: 10px;
   right: 10px;
+  padding: 2px 8px;
 }
 #work .portfolio .item .info:hover .details{
   opacity: 1;
