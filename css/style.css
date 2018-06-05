@@ -59,7 +59,7 @@
   line-height: 20px;
 }
 .navbar .opciones {
-  padding-left: 50px;
+  padding-left: 95px;
   text-align: center !important;
 
 }
@@ -99,19 +99,6 @@
     padding-top: 40px;
     padding-bottom: 80px;
 }
-.carna-menu-wrap {
-    text-align: center !important;
-}
-
-.alm-btn-wrap{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  padding: 20px;
-}
-
 
 .modal-backdrop.in {
     filter: alpha(opacity=90);
@@ -124,12 +111,6 @@
     padding: 0px;
 }
 
-.mm-menu-open .nav-wrap .container-fluid {
-  padding-right: 0px;
-}
-.mm-menu-open .nav-wrap .container-fluid .logo-white{
-  padding: 8px;
-}
 .back-to-top{
     position: fixed;
     bottom: 10px;
@@ -178,10 +159,6 @@
 .jumbotron{
   color: #ffffff;
   position: relative;
-}
-.jumbotron b::first-letter{
-  font-size: 5em;
-  color: #000000;
 }
 .jumbotron .scroll{
   position: absolute;
