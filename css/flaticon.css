@@ -1,0 +1,395 @@
+@font-face { 
+	font-family: "flaticon"; 
+	src: 	url("../fonts/flaticon.eot"); 
+	src: 	url("../fonts/flaticon.eot") format("embedded-opentype"), 
+			url("../fonts/flaticon.ttf") format("truetype"), 
+			url("../fonts/flaticon.woff") format("woff"), 
+			url("../fonts/flaticon.svg") format("svg"); 
+			font-weight: normal; 
+			font-style: normal; 
+}
+[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+    font-family: "flaticon";
+    font-style: normal;
+}
+.flaticon-agregar-cuadros:before {
+	content: "\e001";
+}
+.flaticon-android-logo:before {
+	content: "\e002";
+}
+.flaticon-antenna:before {
+	content: "\e003";
+}
+.flaticon-aplicacion:before {
+	content: "\e004";
+}
+.flaticon-app-mobile-ui:before {
+	content: "\e005";
+}
+.flaticon-apple:before {
+	content: "\e006";
+}
+.flaticon-archivos-papel:before {
+	content: "\e007";
+}
+.flaticon-archivos-seguros:before {
+	content: "\e008";
+}
+.flaticon-avion-volar:before {
+	content: "\e009";
+}
+.flaticon-barcode:before {
+	content: "\e00a";
+}
+.flaticon-bateria-full:before {
+	content: "\e00b";
+}
+.flaticon-boton-precionar:before {
+	content: "\e00c";
+}
+.flaticon-brujula-orientacion:before {
+	content: "\e00d";
+}
+.flaticon-cabeza-pensar-piesas:before {
+	content: "\e00e";
+}
+.flaticon-camara-player-stop:before {
+	content: "\e00f";
+}
+.flaticon-camara:before {
+	content: "\e010";
+}
+.flaticon-campana-nofiticacion-grande:before {
+	content: "\e011";
+}
+.flaticon-campana-normal:before {
+	content: "\e012";
+}
+.flaticon-campana-notificacion:before {
+	content: "\e013";
+}
+.flaticon-campana-notificando:before {
+	content: "\e014";
+}
+.flaticon-capacitacion:before {
+	content: "\e015";
+}
+.flaticon-casa:before {
+	content: "\e016";
+}
+.flaticon-checked:before {
+	content: "\e017";
+}
+.flaticon-circuitos-mobile:before {
+	content: "\e018";
+}
+.flaticon-close:before {
+	content: "\e019";
+}
+.flaticon-codigobarra:before {
+	content: "\e01a";
+}
+.flaticon-compas-brujula:before {
+	content: "\e01b";
+}
+.flaticon-computer:before {
+	content: "\e01c";
+}
+.flaticon-comunicacion:before {
+	content: "\e01d";
+}
+.flaticon-connection-internet-circulo-mundo:before {
+	content: "\e01e";
+}
+.flaticon-contact-form:before {
+	content: "\e01f";
+}
+.flaticon-conversation-speech-bubbles:before {
+	content: "\e020";
+}
+.flaticon-corazon-latidos:before {
+	content: "\e021";
+}
+.flaticon-correo-abierto:before {
+	content: "\e022";
+}
+.flaticon-cuadrado-3d:before {
+	content: "\e023";
+}
+.flaticon-custom-css:before {
+	content: "\e024";
+}
+.flaticon-delivery-cajas:before {
+	content: "\e025";
+}
+.flaticon-dinero-data-money:before {
+	content: "\e026";
+}
+.flaticon-dispositivos-herramientas:before {
+	content: "\e027";
+}
+.flaticon-dispositivos-mobiles:before {
+	content: "\e028";
+}
+.flaticon-dispositivos:before {
+	content: "\e029";
+}
+.flaticon-down-arrow:before {
+	content: "\e02a";
+}
+.flaticon-edificio:before {
+	content: "\e02b";
+}
+.flaticon-energia-idea:before {
+	content: "\e02c";
+}
+.flaticon-engranaje-opciones:before {
+	content: "\e02d";
+}
+.flaticon-engranajes-hombre:before {
+	content: "\e02e";
+}
+.flaticon-escribir-lapiz-papel:before {
+	content: "\e02f";
+}
+.flaticon-estadisticas-cuadros:before {
+	content: "\e030";
+}
+.flaticon-fabrica-empresa:before {
+	content: "\e031";
+}
+.flaticon-facebook-logo-button:before {
+	content: "\e032";
+}
+.flaticon-facebook-logo:before {
+	content: "\e033";
+}
+.flaticon-facebook-mobile-app:before {
+	content: "\e034";
+}
+.flaticon-favorite-like:before {
+	content: "\e035";
+}
+.flaticon-foco-luz-idea:before {
+	content: "\e036";
+}
+.flaticon-gota-agua:before {
+	content: "\e037";
+}
+.flaticon-graphic-arriba:before {
+	content: "\e038";
+}
+.flaticon-hablando-persona:before {
+	content: "\e039";
+}
+.flaticon-instagram-social-network-logo-of-photo-camera:before {
+	content: "\e03a";
+}
+.flaticon-interface-volumen:before {
+	content: "\e03b";
+}
+.flaticon-laberinto:before {
+	content: "\e03c";
+}
+.flaticon-ladrillos-pared:before {
+	content: "\e03d";
+}
+.flaticon-learning-verde:before {
+	content: "\e03e";
+}
+.flaticon-lenguaje-translador:before {
+	content: "\e03f";
+}
+.flaticon-libro-educacion-letras:before {
+	content: "\e040";
+}
+.flaticon-libros:before {
+	content: "\e041";
+}
+.flaticon-link-symbol:before {
+	content: "\e042";
+}
+.flaticon-linkedin-logo:before {
+	content: "\e043";
+}
+.flaticon-linterna-luz:before {
+	content: "\e044";
+}
+.flaticon-luz-idea-foco:before {
+	content: "\e045";
+}
+.flaticon-mail-black-envelope-symbol:before {
+	content: "\e046";
+}
+.flaticon-mano-bandera:before {
+	content: "\e047";
+}
+.flaticon-manos-apreton:before {
+	content: "\e048";
+}
+.flaticon-map-marker-pin:before {
+	content: "\e049";
+}
+.flaticon-map-mundo:before {
+	content: "\e04a";
+}
+.flaticon-mapa-localizacion:before {
+	content: "\e04b";
+}
+.flaticon-marco-cuadro:before {
+	content: "\e04c";
+}
+.flaticon-medal-medalla-escarapela:before {
+	content: "\e04d";
+}
+.flaticon-medidos-velocimetro:before {
+	content: "\e04e";
+}
+.flaticon-menu-bloques:before {
+	content: "\e04f";
+}
+.flaticon-menu:before {
+	content: "\e050";
+}
+.flaticon-mina-carro:before {
+	content: "\e051";
+}
+.flaticon-mobile-app-developing:before {
+	content: "\e052";
+}
+.flaticon-mobile-app-option:before {
+	content: "\e053";
+}
+.flaticon-mobile-app:before {
+	content: "\e054";
+}
+.flaticon-mobile-application:before {
+	content: "\e055";
+}
+.flaticon-mobile-code:before {
+	content: "\e056";
+}
+.flaticon-negocios-cabeza-hombre:before {
+	content: "\e057";
+}
+.flaticon-notification:before {
+	content: "\e058";
+}
+.flaticon-nube-segura:before {
+	content: "\e059";
+}
+.flaticon-ojo:before {
+	content: "\e05a";
+}
+.flaticon-pantalla-estadisticas:before {
+	content: "\e05b";
+}
+.flaticon-pantalla-web:before {
+	content: "\e05c";
+}
+.flaticon-pdf-file-format-symbol:before {
+	content: "\e05d";
+}
+.flaticon-persona-adentro:before {
+	content: "\e05e";
+}
+.flaticon-persona-jefe:before {
+	content: "\e05f";
+}
+.flaticon-personas-entrelasadas:before {
+	content: "\e060";
+}
+.flaticon-personas-negocio:before {
+	content: "\e061";
+}
+.flaticon-personas-perfil-cabezas:before {
+	content: "\e062";
+}
+.flaticon-peru:before {
+	content: "\e063";
+}
+.flaticon-phone-receiver:before {
+	content: "\e064";
+}
+.flaticon-pin-marcador:before {
+	content: "\e065";
+}
+.flaticon-play-video:before {
+	content: "\e066";
+}
+.flaticon-qr-code-scan:before {
+	content: "\e067";
+}
+.flaticon-search-buscar:before {
+	content: "\e068";
+}
+.flaticon-seguridad-celular:before {
+	content: "\e069";
+}
+.flaticon-sincronizador-flechas:before {
+	content: "\e06a";
+}
+.flaticon-smartphone-app:before {
+	content: "\e06b";
+}
+.flaticon-smartphone-call:before {
+	content: "\e06c";
+}
+.flaticon-smartphone-celular:before {
+	content: "\e06d";
+}
+.flaticon-soporte-tecnico-1:before {
+	content: "\e06e";
+}
+.flaticon-soporte-tecnico:before {
+	content: "\e06f";
+}
+.flaticon-telefono:before {
+	content: "\e070";
+}
+.flaticon-tool:before {
+	content: "\e071";
+}
+.flaticon-tractor:before {
+	content: "\e072";
+}
+.flaticon-transferencia-datos:before {
+	content: "\e073";
+}
+.flaticon-transport-rapido:before {
+	content: "\e074";
+}
+.flaticon-twitter-logo-silhouette:before {
+	content: "\e075";
+}
+.flaticon-ungroup:before {
+	content: "\e076";
+}
+.flaticon-vector-pencil:before {
+	content: "\e077";
+}
+.flaticon-vendas-regla:before {
+	content: "\e078";
+}
+.flaticon-video-capacitacion:before {
+	content: "\e079";
+}
+.flaticon-web-code:before {
+	content: "\e07a";
+}
+.flaticon-windows-8:before {
+	content: "\e07b";
+}
+.flaticon-windows-phone:before {
+	content: "\e07c";
+}
+.flaticon-windows:before {
+	content: "\e07d";
+}
+.flaticon-youtube-video:before {
+	content: "\e07e";
+}
+.flaticon-zoom-in-dedos:before {
+	content: "\e07f";
+}
