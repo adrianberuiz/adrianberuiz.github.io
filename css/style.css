@@ -77,12 +77,14 @@
 }
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
-.navbar-default .navbar-nav>.active>a:hover {
-    color: #1DDCBA;
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover{
+    color: #32a2d4;
     background-color: transparent;
 }
 .navbar .navbar-nav li a:hover{
-  color: #20C6A8;
+  color: #32a2d4;
 } 
 
 
@@ -183,12 +185,27 @@
 .dark-bg,.deco-parting,#logos,.mm-menu{ 
   background-image: url('../img/noisy_net.png');  
 }
+.jumbotron{
+  padding: 0;
+  overflow: hidden;
+  margin: 0; 
+  background: url('../img/banner.jpg'); 
+background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
 #about{
   background: rgba(255, 255, 255, 1);
   font-family: "Raleway-Light";
 }
 #services{ 
-  background: #193f42; /*fbfaf9*/
+  background: url('../img/fondo.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: bottom; 
+  background-attachment: fixed;
+/*  background: #193f42; /*fbfaf9*/*/
 }
 #skills{ 
   background: #1a1f24;
@@ -241,8 +258,8 @@
     font-weight: bold;
     cursor: pointer;
     background: transparent;
-    border: 1px solid #144448;
-    margin: 0px;
+    border: 0px;
+    margin: 10px 0px;
     padding: 5px 8px;
     font-size: .9em;
     font-weight: 400;
@@ -252,13 +269,16 @@
     outline: none;
 }
 #work .botones .btn-portfolio:hover{
-    background: #F1F7F6;
+    border-bottom: 1px solid #2F6468;
 }
 #work .botones .active,
 #work .botones .active:hover,
 #work .botones .btn-portfolio:focus{
-    background: #144448;
-    color: #ffffff;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  border: 0px;
 }
 #work .portfolio { 
   display: inline-block;
@@ -316,25 +336,22 @@
   
 }
 #work .portfolio .item .info .details .ver{
-  background: rgba(19,149,209,1);
-background: -moz-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(19,149,209,1)), color-stop(100%, rgba(6,179,110,1)));
-background: -webkit-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
-background: -o-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
-background: linear-gradient(45deg, rgba(19,149,209,1) 0%, rgba(6,179,110,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', endColorstr='#06b36e', GradientType=1 );
+  background: #32a2d4; 
   color: #fff;
+  line-height: 20px;
   font-size: 12px;
   bottom: 10px;
   right: 80px;
-  font-family: "Raleway-Light";
+  font-family: "Raleway-Medium";
   text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
 }
 #work .portfolio .item .info .details .ver i{
   line-height: 20px;
-    font-size: 15px;
-    vertical-align: middle;
+  font-size: 10px;
+  margin-left: 4px;
+  vertical-align: middle;
 }
 #work .portfolio .item .info .details .link{
   background: #ffffff;
@@ -349,7 +366,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
   opacity: 1;
 }
 #work .portfolio .item .detalles h4{ 
-  color: #1BD394;
+  color: #32a2d4;
   font-family: "Raleway-Bold";
   text-transform: uppercase;
   font-size: 15px;
@@ -397,7 +414,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
 }
 
 #services{
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 120px;
 }
 #services h1{
@@ -630,5 +647,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1395d1', end
   }
   .jumbotron .scroll{
     bottom: 12%;
+  }
+  .jumbotron .banner1{
+    width: 100%;
+  }
+  .jumbotron .banner1,
+  .jumbotron .banner2,
+  .jumbotron .banner3,
+  .jumbotron .banner4{
+    width: 100% !important;
+    left: 0% !important;
+  }
+}
+@media (max-width: 492px){
+  .jumbotron .banner1,
+  .jumbotron .banner2,
+  .jumbotron .banner3{
+    width: 150% !important;
+    left: -25% !important;
+  }
+  .jumbotron .banner4{
+    display: none;
   }
 }
