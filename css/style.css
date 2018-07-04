@@ -122,15 +122,12 @@
     padding: 5px 2px;
     z-index: 9999;
     text-align: center;
-    background: #353434;
-    border-radius: 1px;
+    font-size: 20px;
+    color: #32a2d4;
+    cursor: pointer;
 }
 .back-to-top:hover {
-  background: -webkit-linear-gradient(left top, #5eb575, #56a6c3); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #5eb575, #56a6c3); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #5eb575, #56a6c3); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #5eb575, #56a6c3); /* Standard syntax */
-  color: #fff;
+  color: #1B78A2;
 }
 
 
@@ -164,15 +161,17 @@
 }
 .jumbotron .scroll{
   position: absolute;
-  bottom: 6%;
-  left: 47%;
-  width: 5%;
+  bottom: 18%;
+  left: 48.5%;
+  width: 3%;
   text-align: center;
   cursor: pointer;
+
 }
 .jumbotron .scroll img{
       width: auto;
     height: 50px;
+      opacity: .7;
 }
 
 .efecto{ 
@@ -192,28 +191,34 @@
   background: url('../img/banner.jpg'); 
 background-size: cover;
   background-repeat: no-repeat; 
-  background-position: center; 
+  background-position: bottom; 
 }
-
+#work{ 
+  background: #ffffff;  /*fbfaf9*/
+    background: url('../img/portfolio.jpg'); 
+background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: top; 
+}
 #about{
   background: rgba(255, 255, 255, 1);
   font-family: "Raleway-Light";
 }
 #services{ 
-  background: url('../img/fondo.jpg'); 
-  background-size: cover; 
+  background: url('../img/servicios.png'); 
+  background-size: contain; 
   background-repeat: no-repeat; 
-  background-position: bottom; 
-  background-attachment: fixed;
+  background-position: left; 
 /*  background: #193f42; /*fbfaf9*/*/
 }
 #skills{ 
-  background: #1a1f24;
+  background: url('../img/skill.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right; 
   /*background-image: url('../img/noisy_net.png');   /*F5F5F5*/*/
 }
-#work{ 
-  background: #ffffff;  /*fbfaf9*/
-}
+
 #contact{ 
   background-image: url('../img/fondo3.jpeg');  
   background-size: cover;
@@ -274,10 +279,8 @@ background-size: cover;
 #work .botones .active,
 #work .botones .active:hover,
 #work .botones .btn-portfolio:focus{
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #ffffff;
+  background: #32a2d4;  /* fallback for old browsers */
+color: #ffffff;
   border: 0px;
 }
 #work .portfolio { 
@@ -459,13 +462,17 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 #about .aboutme{
   font-size: 1em;
+  text-align: center;
 }
-
+#about .fadeInDown{
+  text-align: center;
+}
 #about .how-work h6{
   text-transform: uppercase;
   font-family: "Raleway-Bold";
   font-size: 1em;
   display: block;
+  text-align: center;
 }
 #about .how-work .icono{
   width: 80px;
@@ -532,13 +539,12 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin-bottom: 10px;
     font-size: 13px;
     color: #2E2E2E;
-    padding-top: 35px;
 }
 .main-footer h4{
     font-size: 14px;
 }
 .main-footer{
-  background: #BDBDBD;
+  background: #ffffff;
 }
 
 
