@@ -189,16 +189,16 @@
   overflow: hidden;
   margin: 0; 
   background: url('../img/banner.jpg'); 
-background-size: cover;
+  background-size: 100% 95vh !important;
   background-repeat: no-repeat; 
-  background-position: bottom; 
+  background-position: bottom center; 
 }
 #work{ 
   background: #ffffff;  /*fbfaf9*/
     background: url('../img/portfolio.jpg'); 
-background-size: cover;
+  background-size: 100% 100vh !important;
   background-repeat: no-repeat; 
-  background-position: top; 
+  background-position: top right; 
 }
 #about{
   background: rgba(255, 255, 255, 1);
@@ -548,12 +548,6 @@ color: #ffffff;
 }
 
 
-@media (max-width: 993px){
-  .jumbotron{
-    background-position: right !important;
-    padding-bottom: 40px !important;
-  }
-}
 
 @media (min-width: 993px){
   .smaller .brand img[class*="logo"], .smaller .brand-widescreen img[class*="logo"] {
@@ -651,28 +645,45 @@ color: #ffffff;
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
   }
+  .jumbotron{
+    height: 42vh !important;
+    background-size: 100% 42vh !important;;
+    background-position: top !important;;
+  }
+  #work{
+    background-size: 100% !important;;
+    background-position: top !important;;
+  }
   .jumbotron .scroll{
     bottom: 12%;
   }
-  .jumbotron .banner1{
-    width: 100%;
-  }
-  .jumbotron .banner1,
-  .jumbotron .banner2,
-  .jumbotron .banner3,
-  .jumbotron .banner4{
-    width: 100% !important;
-    left: 0% !important;
-  }
-}
-@media (max-width: 492px){
   .jumbotron .banner1,
   .jumbotron .banner2,
   .jumbotron .banner3{
-    width: 150% !important;
-    left: -25% !important;
+    width: 70% !important;
+    left: 15% !important;
   }
-  .jumbotron .banner4{
+  .scroll{
+    display: none;
+  }
+}
+@media (max-width: 492px){
+  .jumbotron{
+    height: 42vh !important;
+    background-size: 100% 42vh !important;;
+    background-position: top !important;;
+  }
+  #work{
+    background-size: contain !important;;
+    background-position: top !important;;
+  }
+  .jumbotron .banner1,
+  .jumbotron .banner2,
+  .jumbotron .banner3{
+    width: 100% !important;
+    left: 0% !important;
+  }
+  .scroll{
     display: none;
   }
 }
