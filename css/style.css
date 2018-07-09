@@ -206,17 +206,17 @@
 }
 #services{ 
   background: url('../img/servicios.png'); 
-  background-size: contain; 
+  background-size: 100% 100% !important;
   background-repeat: no-repeat; 
-  background-position: left; 
+  background-position: center; 
 /*  background: #193f42; /*fbfaf9*/*/
 }
 #skills{ 
   background: url('../img/skill.png'); 
-  background-size: contain; 
+  background-size: 100% 100% !important;
   background-repeat: no-repeat; 
-  background-position: right; 
-  /*background-image: url('../img/noisy_net.png');   /*F5F5F5*/*/
+  background-position: top; 
+  /*background-image: url('../img/noisy_net.png');   79vh */
 }
 
 #contact{ 
@@ -386,8 +386,8 @@ color: #ffffff;
 
 
 #skills{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #skills .skill {
   text-align: center;
@@ -548,6 +548,7 @@ color: #ffffff;
 }
 @media (max-width: 993px){
     #services{ 
+      background-size: cover !important;
       background: #1e5799; /* Old browsers */
       background: -moz-linear-gradient(45deg, #1e5799 0%, #05ba77 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(45deg, #1e5799 0%,#05ba77 100%); /* Chrome10-25,Safari5.1-6 */
@@ -555,6 +556,7 @@ color: #ffffff;
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#05ba77',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     #skills{ 
+      background-size: cover !important;
       background: #2b6875; /* Old browsers */
       background: -moz-linear-gradient(45deg, #2b6875 0%, #022644 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(45deg, #2b6875 0%,#022644 100%); /* Chrome10-25,Safari5.1-6 */
@@ -677,6 +679,7 @@ color: #ffffff;
     left: 15% !important;
   }
     #services{ 
+      background-size: cover !important;
   background: #1e5799; /* Old browsers */
 background: -moz-linear-gradient(45deg, #1e5799 0%, #05ba77 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #1e5799 0%,#05ba77 100%); /* Chrome10-25,Safari5.1-6 */
@@ -685,6 +688,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 /*  background: #193f42; /*fbfaf9*/*/
 }
 #skills{ 
+  background-size: cover !important;
 background: #2b6875; /* Old browsers */
 background: -moz-linear-gradient(45deg, #2b6875 0%, #022644 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #2b6875 0%,#022644 100%); /* Chrome10-25,Safari5.1-6 */
@@ -715,6 +719,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6875', end
     display: none;
   }
   #services{ 
+    background-size: cover !important;
   background: #1e5799; /* Old browsers */
 background: -moz-linear-gradient(45deg, #1e5799 0%, #05ba77 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #1e5799 0%,#05ba77 100%); /* Chrome10-25,Safari5.1-6 */
@@ -723,6 +728,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 /*  background: #193f42; /*fbfaf9*/*/
 }
 #skills{ 
+  background-size: cover !important;
 background: #2b6875; /* Old browsers */
 background: -moz-linear-gradient(45deg, #2b6875 0%, #022644 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #2b6875 0%,#022644 100%); /* Chrome10-25,Safari5.1-6 */
