@@ -707,7 +707,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6875', end
   }
   #work{
     background-size: contain !important;;
-    background-position: center -1px !important;;
+    background-position: center 0px !important;;
   }
   .jumbotron .banner1,
   .jumbotron .banner2{
@@ -715,8 +715,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6875', end
     left: 0% !important;
   }
   .jumbotron .banner3{
-    width: 120% !important;
-    left: -10% !important;
+    width: 140% !important;
+    left: -20% !important;
+    top: -5% !important;
   }
   .scroll{
     display: none;
