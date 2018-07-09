@@ -707,13 +707,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6875', end
   }
   #work{
     background-size: contain !important;;
-    background-position: top !important;;
+    background-position: center -1px !important;;
   }
   .jumbotron .banner1,
-  .jumbotron .banner2,
-  .jumbotron .banner3{
+  .jumbotron .banner2{
     width: 100% !important;
     left: 0% !important;
+  }
+  .jumbotron .banner3{
+    width: 120% !important;
+    left: -10% !important;
   }
   .scroll{
     display: none;
