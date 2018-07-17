@@ -362,7 +362,7 @@
             </div>
         </div>
     </div>
-    <a class="back-to-top" style="display: block;" onclick="$('#wrapper').animatescroll({scrollSpeed:2000,easing:'easeInQuart'});"><i class="fas fa-arrow-up"></i></a>        
+    <a class="back-to-top" onclick="$('#wrapper').animatescroll({scrollSpeed:2000,easing:'easeInQuart'});"><i class="fas fa-arrow-up"></i></a>        
     <footer class="main-footer text-center" style="padding: 20px 0px; position: relative;">
         <!-- <div class="tringulo" style="width: 0;height: 0;border-left: 1380px solid #1a1f24; border-top: 0px solid #1a1f24;border-right: 50px solid transparent;border-bottom: 50px solid transparent;position: absolute;top: 0;right: 0;"></div> -->
         <div class="container">
@@ -399,6 +399,13 @@
                 } else {
                     $("#menu").removeClass("bg-inverse");
                     $(".navbar-brand img").attr("src","img/logo-white.png");
+                }
+                if (windowPos > 300) {
+                    // $(".back-to-top").css("display","block");
+                     $(".back-to-top").show();
+                }else{
+                    // $(".back-to-top").css("display","none");
+                    $(".back-to-top").hide();
                 }
                 for (var i = 0; i < aArray.length; i++) {
                     var theID = aArray[i];
