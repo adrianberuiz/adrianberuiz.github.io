@@ -518,15 +518,16 @@ color: #ffffff;
   position: absolute;
   top: 0;
   right: 0;
-  background: #1e1e1e;
+  /*background: #1e1e1e;*/
   line-height: 10px;
-  font-size: 15px;
+  font-size: 20px;
   padding: 10px;
+  padding-right: 10px;
   color: #DDDCDC;
   text-shadow: 0 0px 0 #fff;
   z-index: 999;
   opacity: 1;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 
