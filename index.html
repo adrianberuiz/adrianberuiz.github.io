@@ -97,9 +97,29 @@
                     <a class="btn-portfolio filter-button" data-filter="app">Aplicaciones</a>
                 </div>
             </div>
+            
             <div class="container">
                 <div id="works" class="portfolio">
                 	<div class="col-md-4 filter wordpress wow fadeInDown" data-wow-delay="0s">
+                        <div class="item">
+                            <div class="info">
+                                <div class="details">
+                                    <div class="detalles">
+                                        <h4>Tuproyectomiami</h4>
+                                        <p>Wordpress Theme Design & Development</p>
+                                    </div>
+                                    <a class="link" target="_blank" href="https://tuproyectomiami.com/" title="Visitar Web">
+                                        <i class="ion-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="image">   
+                                    <img src="img/tuproyectomiami.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="title_element">Tuproyectomiami</h4>
+                    </div>
+                    <div class="col-md-4 filter wordpress wow fadeInDown" data-wow-delay="0s">
                         <div class="item">
                             <div class="info">
                                 <div class="details">
@@ -398,8 +418,10 @@
         </div>
     </div>
     <div id="gallery">
-    	<a class="close"><i class="ion-close"></i></a>
-        <div class="content">            
+        <div class="loader"></div> 
+    	<a class="close"><i class="ion-android-close"></i></a>
+        <div class="content">  
+
             <!-- <div class="info col-md-4">
                 <h1>Titulo</h1>
                 <p>Desarrollo</p>
@@ -476,12 +498,16 @@
                     $(".navbar-brand img").attr("src","img/logo-white.png");
                 }
             });
-            $(".item .detalles").click(function(){
+            $(".item .details").click(function(){
+                $(".loader").attr("display","block");
+                $('#gallery .contenido').remove();
                 //var img = $(this).parent().parent().find("img").attr("src");
                 var img = $(this).parent().parent().find("img").attr("src");
                 img=img.replace("img/","img/lg_");
-                $("#gallery img").attr("src",img);
-                $('#gallery').scrollTop(0);
+                $('#gallery .content').append("<div class='contenido'><img src='"+img+"' alt=''></div>");
+                //$("#gallery img").attr("src",img);
+                //$('#gallery').scrollTop(0);
+                $(".loader").attr("display","none");
                 $('#gallery').show();
                 $(".back-to-top").hide();
                 var scrollPosition = [
@@ -493,9 +519,25 @@
 				html.data('previous-overflow', html.css('overflow'));
 				html.css('overflow', 'hidden');
 				window.scrollTo(scrollPosition[0], scrollPosition[1]);
-
             });
+            $(".item .details a").click(function(e) {
+                e.stopPropagation();
+           });
+            $('#gallery').click(function(){
+                $('#gallery .contenido').remove();
+                $('#gallery').hide();
+                $(".back-to-top").show();
+                // un-lock scroll position
+                var html = jQuery('html');
+                var scrollPosition = html.data('scroll-position');
+                html.css('overflow', html.data('previous-overflow'));
+                window.scrollTo(scrollPosition[0], scrollPosition[1])          
+            });
+            $('#gallery .content').click(function(e) {
+                e.stopPropagation();
+           });
             $('#gallery .close').click(function(){
+                $('#gallery .contenido').remove();
                 $('#gallery').hide();
                 $(".back-to-top").show();
                 // un-lock scroll position

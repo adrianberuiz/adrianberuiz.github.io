@@ -14,7 +14,22 @@
   font-family: "Santral Light";
   src: url("../fonts/fonts/Santral-Light.otf");
 }
+.loader {
+  position: absolute;
+  top: 45vh;
+  left: 47.8%;
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #32a2d4; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 #wrapper{
   position: relative;
   overflow: hidden;
@@ -514,7 +529,7 @@ color: #ffffff;
   right: 40px;
   left: 40px;
   bottom: 40px;
-  background: #fff;
+  background: transparent;
   overflow: hidden;
 }
 #gallery .contenido{
@@ -532,14 +547,18 @@ color: #ffffff;
   right: 0;
   /*background: #1e1e1e;*/
   line-height: 10px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
   padding-right: 10px;
-  color: #DDDCDC;
+  color: #FBFBFB;
   text-shadow: 0 0px 0 #fff;
   z-index: 999;
-  opacity: 1;
+  opacity: .9;
   padding-right: 10px;
+  transition: all .1s ease;
+}
+#gallery .close:hover{
+  opacity: 1;
 }
 
 
